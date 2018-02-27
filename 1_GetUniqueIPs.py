@@ -19,6 +19,7 @@ def createTables():
                 "LOGINATTEMPTS INT,"
                 "COUNTOFCOMMANDS INT,"
                 "DOSCLUSTER INT,"
+                "SENTIMENT INT,"
                 "COMMANDS TEXT)")
 
     cur.execute("CREATE TABLE IF NOT EXISTS DOS_ATTACKS("

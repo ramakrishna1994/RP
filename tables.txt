@@ -1,0 +1,53 @@
+create table NL_DEVICES_ALL(
+ip text,
+	ports text,
+		metadata_device_type text,
+			metadata_description text,
+				metadata_manufacturer text,
+					metadata_os text,
+					metadata_os_version text,
+					metadata_product text,
+						metadata_revision text,
+							location_city text,
+								location_continent text,
+									location_country text,
+										location_country_code text,
+											location_latitude text,
+												location_longitude text,
+													location_postal_code text,
+														location_province text,
+															location_registered_country text,
+																location_registered_country_code text,
+																	location_timezone text)
+
+create table INDIA_DEVICES_ALL(
+ip text,
+	ports text,
+		metadata_device_type text,
+			metadata_description text,
+				metadata_manufacturer text,
+					metadata_os text,
+					metadata_os_version text,
+					metadata_product text,
+						metadata_revision text,
+							location_city text,
+								location_continent text,
+									location_country text,
+										location_country_code text,
+											location_latitude text,
+												location_longitude text,
+													location_postal_code text,
+														location_province text,
+															location_registered_country text,
+																location_registered_country_code text,
+																	location_timezone text)
+
+
+
+select values->>'ip' as EId,
+       values->>'ports' as Category
+
+from   (
+           select json_array_elements(replace(values,'\','\\')::json) as values
+           from   temp_json
+       ) a;
