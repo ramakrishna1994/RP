@@ -3,9 +3,9 @@ import psycopg2
 dbName = "cowrie"
 
 
-cluster1center = 30.06456044
-cluster2center = 10944.0
-cluster3center = 17016.22222222
+cluster1center = 25.21769815
+cluster2center = 11354.0
+cluster3center = 20776.75
 
 try:
     conn = psycopg2.connect("dbname='"+str(dbName)+"' user='postgres' host='localhost' password='postgres'")
