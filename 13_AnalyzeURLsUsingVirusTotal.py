@@ -1,12 +1,14 @@
 import requests
 import json
 from subprocess import check_output
+from collections import Counter
 
 apikey = "f0aa0772e518487aa5daf1dcf2be2d37c9b9b361b1a0d8339faf972210b36d41"
 scan_url = 'https://www.virustotal.com/vtapi/v2/url/scan'
 scan_ids = []
+softwares = []
 
-def getResults(scan_id):
+def getScanResults(scan_id):
     report_url = 'https://www.virustotal.com/vtapi/v2/url/report?' \
                  'apikey=' + apikey + '&' \
                  'resource=' + scan_id + '&' \
@@ -20,8 +22,8 @@ def getResults(scan_id):
     print "----------------"
     for r in res['scans']:
         if res['scans'][r]['detected'] == True:
-            print str(r) + "==" + str(res['scans'][r]['detected']) + "==" + str(res['scans'][r]['result'])
-
+            print str(r) + "_____|____" + str(res['scans'][r]['detected']) + "_____|____" + str(res['scans'][r]['result'])
+            softwares.append(r)
 
 with open("urls.txt") as fp:
    url = fp.readline()
@@ -36,8 +38,12 @@ with open("urls.txt") as fp:
        url = fp.readline()
 
 for id in scan_ids:
-    print "============================"
-    getResults(id)
+    print "**********************************************************"
+    getScanResults(id)
+
+print "*************************************************************"
+print Counter(softwares)
+
 
 
 
