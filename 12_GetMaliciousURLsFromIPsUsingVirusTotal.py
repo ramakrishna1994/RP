@@ -7,7 +7,7 @@ scan_url = 'https://www.virustotal.com/vtapi/v2/ip-address/report?apikey='+apike
 uniqueURLs = set()
 
 dbName = "cowrie"
-offset = 76
+offset = 1813
 try:
     conn = psycopg2.connect("dbname='"+str(dbName)+"' user='postgres' host='localhost' password='postgres'")
 except Exception as e:
@@ -34,7 +34,7 @@ for row in rows:
             #print resp["detected_urls"]
             for url in resp["detected_urls"]:
                 print url["url"]
-                cur.execute("INSERT INTO MALICIOUS_URLS VALUES('" + url["url"] + "')")
+                cur.execute("INSERT INTO MALICIOUS_URLS(URL) VALUES('" + url["url"] + "')")
                 conn.commit()
 
 
