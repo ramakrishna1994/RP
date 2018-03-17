@@ -15,7 +15,7 @@ except Exception as e:
 cur = conn.cursor()
 
 
-cur.execute("SELECT URL FROM MALICIOUS_URLS OFFSET "+str(offset))
+cur.execute("SELECT URL FROM MALICIOUS_URLS ORDER BY URL OFFSET "+str(offset))
 urls = cur.fetchall()
 i=offset
 for url in urls:

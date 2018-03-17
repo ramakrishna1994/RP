@@ -5,10 +5,11 @@ import json
 
 dbName = "cowrie"
 apikey = "f0aa0772e518487aa5daf1dcf2be2d37c9b9b361b1a0d8339faf972210b36d41"
-offset = 1
+offset = 3
 
 
 def getScanResults(scan_id):
+    print scan_id
     softwares = ""
     report_url = 'https://www.virustotal.com/vtapi/v2/url/report?' \
                  'apikey=' + str(apikey) + '&' \
@@ -21,12 +22,14 @@ def getScanResults(scan_id):
     for r in res['scans']:
         if res['scans'][r]['detected'] == True:
             softwares += str(r) + ";"
-    print scan_id
     print softwares
     softwares = softwares[0:len(softwares)-1]
     positives = res['positives']
     total = res['total']
-    cur.execute("UPDATE MALICIOUS_URLS SET POSITIVES="+str(positives)+", TOTAL="+str(total)+" ,IDENTIFIED_ENGINES='"+str(softwares)+"';")
+    cur.execute("UPDATE MALICIOUS_URLS SET "
+                    "POSITIVES="+str(positives)+", "
+                    "TOTAL="+str(total)+" ,"
+                    "IDENTIFIED_ENGINES='"+str(softwares)+"' WHERE SCAN_URL='"+scan_id+"';")
     conn.commit()
 
 
@@ -44,5 +47,6 @@ for id in scan_ids:
     print "**********************************************************"
     print i
     i = i+1
-    getScanResults(id[0])
+    if(id[0]!=None):
+        getScanResults(id[0])
 
