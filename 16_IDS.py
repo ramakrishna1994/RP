@@ -2,13 +2,16 @@ import psycopg2
 from collections import Counter
 from prettytable import PrettyTable
 from termcolor import colored
+import sys
 
 IdentifiedEnginesCount = PrettyTable(['Antivirus Engine', 'Identified Count'])
 MaliciousURLSCount = PrettyTable(['URL', 'Positives','Total'])
 
 uniqueURLs = set()
 dbName = "cowrie"
-ipToTest = "192.200.218.165"
+#ipToTest = "192.200.218.166"
+#print str(sys.argv)
+ipToTest = str((sys.argv)[1])
 engines = []
 malicious = 0;
 

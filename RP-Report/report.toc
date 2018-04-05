@@ -1,0 +1,62 @@
+\contentsline {section}{\numberline {1}Introduction of Tools}{1}{section.1}
+\contentsline {paragraph}{}{1}{section*.5}
+\contentsline {subsection}{\numberline {1.1}ELK Stack}{1}{subsection.1.1}
+\contentsline {paragraph}{}{1}{section*.6}
+\contentsline {subsubsection}{\numberline {1.1.1}Elastic Search}{1}{subsubsection.1.1.1}
+\contentsline {paragraph}{}{1}{section*.7}
+\contentsline {subsubsection}{\numberline {1.1.2}Logstash}{1}{subsubsection.1.1.2}
+\contentsline {paragraph}{}{1}{section*.8}
+\contentsline {subsubsection}{\numberline {1.1.3}Kibana}{1}{subsubsection.1.1.3}
+\contentsline {paragraph}{}{1}{section*.9}
+\contentsline {subsection}{\numberline {1.2}Honeypots}{1}{subsection.1.2}
+\contentsline {paragraph}{}{1}{section*.10}
+\contentsline {paragraph}{}{1}{section*.11}
+\contentsline {paragraph}{}{1}{section*.12}
+\contentsline {subsubsection}{\numberline {1.2.1}Low-interaction honeypots}{2}{subsubsection.1.2.1}
+\contentsline {paragraph}{}{2}{section*.13}
+\contentsline {paragraph}{}{2}{section*.14}
+\contentsline {subsubsection}{\numberline {1.2.2}Medium-interaction honeypots}{2}{subsubsection.1.2.2}
+\contentsline {paragraph}{}{2}{section*.15}
+\contentsline {subsubsection}{\numberline {1.2.3}High-interaction honeypots}{2}{subsubsection.1.2.3}
+\contentsline {paragraph}{}{2}{section*.16}
+\contentsline {paragraph}{}{2}{section*.17}
+\contentsline {subsubsection}{\numberline {1.2.4}Cowrie Honeypot}{2}{subsubsection.1.2.4}
+\contentsline {paragraph}{}{2}{section*.18}
+\contentsline {paragraph}{Interesting Features of Cowrie Honeypot}{3}{section*.19}
+\contentsline {subsection}{\numberline {1.3}VirusTotal}{3}{subsection.1.3}
+\contentsline {paragraph}{}{3}{section*.20}
+\contentsline {paragraph}{}{3}{section*.21}
+\contentsline {subsubsection}{\numberline {1.3.1}List of Anti-Virus Engines used by VirusTotal}{3}{subsubsection.1.3.1}
+\contentsline {subsection}{\numberline {1.4}Github}{3}{subsection.1.4}
+\contentsline {paragraph}{}{3}{section*.22}
+\contentsline {paragraph}{}{4}{section*.23}
+\contentsline {section}{\numberline {2}Installation of Tools}{4}{section.2}
+\contentsline {paragraph}{}{4}{section*.24}
+\contentsline {subsection}{\numberline {2.1}Elastic Search}{4}{subsection.2.1}
+\contentsline {paragraph}{}{4}{section*.25}
+\contentsline {paragraph}{}{5}{section*.26}
+\contentsline {subsection}{\numberline {2.2}Logstash}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Kibana}{5}{subsection.2.3}
+\contentsline {paragraph}{}{6}{section*.27}
+\contentsline {subsection}{\numberline {2.4}Cowrie Honeypot}{6}{subsection.2.4}
+\contentsline {paragraph}{}{6}{section*.28}
+\contentsline {subsubsection}{\numberline {2.4.1}Install dependencies }{6}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Create a user account }{6}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Checkout the code }{6}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Setup Virtual Environment }{6}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Port redirection }{6}{subsubsection.2.4.5}
+\contentsline {paragraph}{}{6}{section*.29}
+\contentsline {subsubsection}{\numberline {2.4.6}Starting Cowrie }{6}{subsubsection.2.4.6}
+\contentsline {paragraph}{}{6}{section*.30}
+\contentsline {section}{\numberline {3}Working Model}{7}{section.3}
+\contentsline {paragraph}{}{7}{section*.31}
+\contentsline {paragraph}{}{7}{section*.32}
+\contentsline {paragraph}{}{9}{section*.33}
+\contentsline {paragraph}{}{9}{section*.34}
+\contentsline {paragraph}{}{9}{section*.35}
+\contentsline {paragraph}{}{9}{section*.36}
+\contentsline {paragraph}{}{9}{section*.37}
+\contentsline {paragraph}{}{10}{section*.38}
+\contentsline {paragraph}{}{10}{section*.39}
+\contentsline {paragraph}{}{11}{section*.40}
+\contentsline {paragraph}{}{11}{section*.41}
