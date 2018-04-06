@@ -53,7 +53,7 @@
 \makeatletter
 \def\BState{\State\hskip-\ALG@thistlm}
 \makeatother
-\graphicspath{ {/home/iotsys3/Desktop/Report/images/} }
+\graphicspath{ {./images/} }
 
 \begin{document}
 
@@ -291,14 +291,15 @@ Cowrie will be up and running on port 22 which will monitor all SSH logins and c
 
 \section{Working Model}
 
-All the tools listed above are integrated to form a complete monitoring solution which will looks like below.
+All the tools listed above are integrated to form a complete Working Model which looks like below.
 
 \begin{figure}[H]
 \centering
-\caption{Monitoring System}
-\includegraphics[scale=0.5]{Monitoring_System}
+\caption{Working Model}
+\includegraphics[scale=0.5]{Working_Model}
 \end{figure}
 
+\section{Monitoring System}
 \paragraph{}
 Cowrie will be generating the logs in the form of JSON format which will be available in public IP machine as specified in the figure-3. In order to stream the logs from the public IP machine to Server machine, filebeat can be used which is an open source tool. Unfortunately we did not get to use that tool as there was no physical connection between public IP machine and server machine due to security reasons. 
 
@@ -368,8 +369,42 @@ A pie chart has been drawn against the top 20 passwords used by the attackers an
 \includegraphics[scale=0.29]{Passwords_Pie}
 \end{figure}
 
-\item 
+\item Global Attacks Map
+\paragraph{}
+A map is also plotted against the attacks receiving from different contries and continents using the latitude and longitude values. Most of the attacks are received from european continent and china country.
+
+\begin{figure}[H]
+\centering
+\caption{Global Attacks Map}
+\includegraphics[scale=0.30]{Global_Attacks_Map}
+\end{figure}
+
 \end{enumerate}
+
+\subsection{Stochastic Process}
+\paragraph{}
+Stochastic process is also called random process. It contains random variables with probabilities associated to it. While exact path cannot be inferred, assumptions can be made based on the probabilities of random variables. Attacks pattern observed is following random process or stochastic process as number of attacks on daily basis is not following any pattern.
+
+\begin{figure}[H]
+\centering
+\caption{Stochastic Process}
+\includegraphics[scale=0.7]{Stochastic_Process}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
