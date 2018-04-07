@@ -296,10 +296,17 @@ All the tools listed above are integrated to form a complete Working Model which
 \begin{figure}[H]
 \centering
 \caption{Working Model}
-\includegraphics[scale=0.5]{Working_Model}
+\includegraphics[scale=0.55]{Working_Model}
 \end{figure}
 
 \section{Monitoring System}
+
+\begin{figure}[H]
+\centering
+\caption{Monitoring System}
+\includegraphics[scale=0.55]{Monitoring_System}
+\end{figure}
+
 \paragraph{}
 Cowrie will be generating the logs in the form of JSON format which will be available in public IP machine as specified in the figure-3. In order to stream the logs from the public IP machine to Server machine, filebeat can be used which is an open source tool. Unfortunately we did not get to use that tool as there was no physical connection between public IP machine and server machine due to security reasons. 
 
@@ -327,6 +334,7 @@ Data collected in the elastic search will be picked up by the Kibana by default 
 Using Kibana different visualizations are created which are listed below.
 \begin{enumerate}
 \item Daily Attacks Count Area Graph
+\paragraph{}
 An area graph was plotted against the count of attacks on daily basis. X-axis represents the date and Y-axis represents the count of attacks.It can observed that, attacks kept on increasing at the end.
 
 \begin{figure}[H]
@@ -347,7 +355,7 @@ A Histogram was used to represent the top 20 usernames that have been used by th
 \end{figure}
 
 \paragraph{}
-From the graph, it can be observed that username "admin", "root and "ubnt" are mostly used by attackers.
+From the graph, it can be observed that usernames "admin", "root and "ubnt" are mostly used by attackers.
 
 \item Unique Count Of IP's
 \paragraph{}
@@ -390,6 +398,74 @@ Stochastic process is also called random process. It contains random variables w
 \caption{Stochastic Process}
 \includegraphics[scale=0.7]{Stochastic_Process}
 \end{figure}
+
+\section{Intrusion Detection System}
+\paragraph{}
+An Intrusion Detection System is a software application which regularly monitors the network for malicious activities and reports them to central authority for fail-safe measures. After the monitoring system is setup and data is collected , task is now to design an Intelligent Intrusion Detection System which applies machine learning algorithms on the data and comes up with firewall rules to block malicious activites and IP's. For designing, tools like VirusTotal API's, PostgreSQL database, Spark K-Means Algorithm etc. are used which is given below in detail.
+
+\paragraph{}
+Virus Total is a website where details about different malwares and IP's can be fetched by using their web interface or REST API's. For our convenience, API's are used to integrate with our python programs. Virus Total gives a normal user on an average of 1000 API requests per day combining malware samples and IP's. We have sent a mail to VirusTotal requesting Research User  privileges which has access to 10,000 API requests per day and all malware samples present in their database and got their approval.
+
+\paragraph{}
+In PostgreSQL, database named "cowrie" has been created and below tables were created to store the required data from elastic search and VirusTotal.
+
+\begin{figure}[H]
+\centering
+\caption{PostgreSQL Tables}
+\includegraphics[scale=0.7]{Tables}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Intrusion Detection System}
+\includegraphics[scale=0.7]{Intrusion_Detection_System}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\centering
+\caption{Malicious URL's Table}
+\includegraphics[scale=0.7]{Malicious_Urls}
+\end{figure}
+
+\paragraph{}
+Column "url" is used to store the malicious url and "scan-url" is the ID to identify the job submitted to VirusTotal for malicious url. "positives" contains the number of antivirus engines identified the url as malicious and   "total" indicated the number of antivirus engines present in VirusTotal. "identified-engines" contains the names of all anti-virus engines. Malicious-urls table gets the data from VirusTotal API's. Python codes and their explanations are given below.
+
+ 
+\lstinputlisting[language=python, caption=Get Malicious URLs From Virus Total]{./files/12-GetMaliciousURLsFromIPsUsingVirusTotal.py}
+
+ 
+\lstinputlisting[language=python, caption=Add URL's to PostgreSQL Database]{./files/13-AddURLsToDB.py}
+
+ 
+\lstinputlisting[language=python, caption=Submit URL's for Scan to VirusTota]{./files/14-SubmitURLsForScanUsingVirusTotal.py}
+
+ 
+\lstinputlisting[language=python, caption=Get URL Scan results from VirusTotal]{./files/15-GetURLScanResults.py}
+
+
+\paragraph{}
+Above python codes uses Virus Total API and sends requests for all the malicious urls identified for the specific IP. The response is decoded and then stored into the table. response looks like below.
+
+\lstinputlisting[language=python, caption=Virus Total API Request Sample]{./files/response.txt}
+
+\paragraph{}
+This response is parsed and requires fields are extracted to update the table in the database. These fields include "positives" which is the no of engines identified it as positive, "total" which is the no of the engines in total  and "identified-engines" which contains the names of all the engines in the response.
+
+\begin{figure}[H]
+\centering
+\caption{Stats Table}
+\includegraphics[scale=0.7]{Stats}
+\end{figure}
+ 
+\paragraph{}
+Column "IP" contains the ip of the attacker or intruder and "commands" contains all the commands executed by the attacker or the intruder till noe in cowrie honeypot. "Count-of-commands" contains the number of commands attacker executed. "login-attempts" contains the number of times attacker tried to login into the cowrie. "dos-cluster" contains the cluster number to which ip is clustered which will be updated dynamically. "sentiment" contains the value of ip which is updated after running machine learning algorithms.
+
+\paragraph{}
+All the python codes used for filling the table are given below.
+
 
 
 

@@ -58,22 +58,3 @@ for ip in uniqueIPs:
     conn.commit()
 
 print "Total Number of Unique IP's = " + str(len(uniqueIPs))
-
-'''
-for i in range(0,len(uniqueIPs)):
-    data = {
-       "query": {
-            "query_string" : {
-                "fields" : ["src_ip","eventid"],
-                "query" : str(uniqueIPs[i])+" AND cowrie.command.input"
-            }
-        },
-        "_source": ["geoip.ip","eventid","message"]
-    }
-    headers = {"Content-Type": "application/json"}
-    url = "http://localhost:9200/logstash-*/_search?size=10000"
-    response = requests.post(url,data=data,headers=headers)
-    countOfCommands = json.loads(response.content)["hits"]["total"]
-    print(countOfCommands)
-
-'''
