@@ -313,7 +313,7 @@ Cowrie will be generating the logs in the form of JSON format which will be avai
 \paragraph{}
 So all the logs are copied from public IP machine to server machine on daily basis. These log files are supplied as input to Logstash which will parse, add metadata and push them to Elastic Search database. Logstash works on config files. Each config file has three parameters namely input, filter and output. Our config file is given below.
 
-\lstinputlisting[language=python, caption=Cowrie Config File]{cowrie.conf}
+\lstinputlisting[language=python, caption=Cowrie Config File, captionpos=top]{cowrie.conf}
 
 \begin{enumerate}
 \item Input
@@ -407,13 +407,28 @@ An Intrusion Detection System is a software application which regularly monitors
 Virus Total is a website where details about different malwares and IP's can be fetched by using their web interface or REST API's. For our convenience, API's are used to integrate with our python programs. Virus Total gives a normal user on an average of 1000 API requests per day combining malware samples and IP's. We have sent a mail to VirusTotal requesting Research User  privileges which has access to 10,000 API requests per day and all malware samples present in their database and got their approval.
 
 \paragraph{}
-In PostgreSQL, database named "cowrie" has been created and below tables were created to store the required data from elastic search and VirusTotal.
+In PostgreSQL, database named "cowrie" has been created and below tables were created to store the required data from Elastic Search and VirusTotal.
 
-\begin{figure}[H]
-\centering
-\caption{PostgreSQL Tables}
-\includegraphics[scale=0.7]{Tables}
-\end{figure}
+\begin{table}
+
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
+ \hline
+ \textbf{S.No.} & \textbf{Table Name} & \textbf{Schema}\\
+ \hline
+ \hline
+ 1 & Dos-Attacks & public \\
+ \hline
+2 & Malicious-URLs & public \\
+\hline
+3 & Stats & public \\
+\hline
+\end{tabular}
+ \caption{List of Tables in PostgreSQL Database}
+\end{table}
+
+
+
 
 \begin{figure}[H]
 \centering
@@ -421,50 +436,150 @@ In PostgreSQL, database named "cowrie" has been created and below tables were cr
 \includegraphics[scale=0.7]{Intrusion_Detection_System}
 \end{figure}
 
+\subsection{Malicious-URLs Table}
 
-
-
-\begin{figure}[H]
-\centering
-\caption{Malicious URL's Table}
-\includegraphics[scale=0.7]{Malicious_Urls}
-\end{figure}
+\begin{table}[H]
+\begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
+ \hline
+ \textbf{S.No.} & \textbf{Column Name} & \textbf{Column Datatype}\\
+ \hline
+ \hline
+ 1 & url & text \\
+ \hline
+2 & scan-url & text \\
+\hline
+3 & positives & integer \\
+\hline
+3 & total & integer \\
+\hline
+3 & identified-engines & text \\
+\hline
+\end{tabular}
+ \caption{Schema of Malicious-URLs Table}
+\end{table}
 
 \paragraph{}
 Column "url" is used to store the malicious url and "scan-url" is the ID to identify the job submitted to VirusTotal for malicious url. "positives" contains the number of antivirus engines identified the url as malicious and   "total" indicated the number of antivirus engines present in VirusTotal. "identified-engines" contains the names of all anti-virus engines. Malicious-urls table gets the data from VirusTotal API's. Python codes and their explanations are given below.
 
  
-\lstinputlisting[language=python, caption=Get Malicious URLs From Virus Total]{./files/12-GetMaliciousURLsFromIPsUsingVirusTotal.py}
+\lstinputlisting[language=python, caption=Get Malicious URLs From Virus Total, captionpos=top]{./files/12-GetMaliciousURLsFromIPsUsingVirusTotal.py}
 
  
-\lstinputlisting[language=python, caption=Add URL's to PostgreSQL Database]{./files/13-AddURLsToDB.py}
+\lstinputlisting[language=python, caption=Add URL's to PostgreSQL Database, captionpos=top]{./files/13-AddURLsToDB.py}
 
  
-\lstinputlisting[language=python, caption=Submit URL's for Scan to VirusTota]{./files/14-SubmitURLsForScanUsingVirusTotal.py}
+\lstinputlisting[language=python, caption=Submit URL's for Scan to VirusTotal, captionpos=top]{./files/14-SubmitURLsForScanUsingVirusTotal.py}
 
  
-\lstinputlisting[language=python, caption=Get URL Scan results from VirusTotal]{./files/15-GetURLScanResults.py}
+\lstinputlisting[language=python, caption=Get URL Scan results from VirusTotal, captionpos=top]{./files/15-GetURLScanResults.py}
 
 
 \paragraph{}
 Above python codes uses Virus Total API and sends requests for all the malicious urls identified for the specific IP. The response is decoded and then stored into the table. response looks like below.
 
-\lstinputlisting[language=python, caption=Virus Total API Request Sample]{./files/response.txt}
+\lstinputlisting[language=python, caption=Virus Total API Request Sample, captionpos=top]{./files/response.txt}
 
 \paragraph{}
-This response is parsed and requires fields are extracted to update the table in the database. These fields include "positives" which is the no of engines identified it as positive, "total" which is the no of the engines in total  and "identified-engines" which contains the names of all the engines in the response.
+This response is parsed and requires fields are extracted to update the table in the database. These fields include "positives" which is the no of engines identified it as positive, "total" which is the count of the engines in total  and "identified-engines" which contains the names of all the engines in the response.
 
-\begin{figure}[H]
-\centering
-\caption{Stats Table}
-\includegraphics[scale=0.7]{Stats}
-\end{figure}
+
+\subsection{Stats Table}
+
+\begin{table}[H]
+\begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
+ \hline
+ \textbf{S.No.} & \textbf{Column Name} & \textbf{Column Datatype}\\
+ \hline
+ \hline
+ 1 & ip & character varying(20) \\
+ \hline
+2 & commands & text \\
+\hline
+3 & countofcommands & integer \\
+\hline
+4 & loginattempts & integer \\
+\hline
+5 & doscluster & text \\
+\hline
+6 & sentiment & integer \\
+\hline
+\end{tabular}
+ \caption{Schema of Stats Table}
+\end{table}
+
  
 \paragraph{}
 Column "IP" contains the ip of the attacker or intruder and "commands" contains all the commands executed by the attacker or the intruder till noe in cowrie honeypot. "Count-of-commands" contains the number of commands attacker executed. "login-attempts" contains the number of times attacker tried to login into the cowrie. "dos-cluster" contains the cluster number to which ip is clustered which will be updated dynamically. "sentiment" contains the value of ip which is updated after running machine learning algorithms.
 
 \paragraph{}
-All the python codes used for filling the table are given below.
+All the python codes used for filling the table are given below one by one.
+
+
+\lstinputlisting[language=python, caption=Get Unique IPs from Elastic Search, captionpos=top]{./files/01_GetUniqueIPs.py}
+
+\paragraph{}
+The above python code fetches all the IP's from elastic search, puts them in a set to avoid duplicates and copies all the IP's to the column named "ip" in Stats table. It uses the Elastic Search API's which looks like below.
+
+\begin{lstlisting}[language=Python, caption=Elastic Search API Request Sample,captionpos=top]
+POST localhost:9200/logstash-*/_search
+{
+  "size" : 0,
+    "aggs" : {
+        "distinct_ip" : {
+            "cardinality" : {
+              "field" : "geoip.ip"
+            }
+          
+        }
+    }
+}
+\end{lstlisting}
+
+
+\lstinputlisting[language=python, caption=Get Commands Executed by IPs from Elastic Search, captionpos=top]{./files/02_GetCommandsForIPs.py}
+
+\paragraph{}
+The above python code fetches all the commands executed per IP , appends them together separated by semicolon and puts them in the column named "commands" in Stats table. It also updates the "countofcommands" column.
+
+\lstinputlisting[language=python, caption=Get Login Attempts by IPs from Elastic Search, captionpos=top]{./files/03_getLoginAttemptsForIPs.py}
+
+\paragraph{}
+The above python code gets the number of login attempts done by each IP from the elastic search. It counts the attempts and stores them in column named "loginattempts" in Stats table. 
+
+\subsubsection{DOS Attacks}
+\paragraph{}
+This "loginattempts" login is used to predict whether IP is performing DOS attack or not. For this , only those IP's are considered where after they log in , they don'e execute any commands and just leave. Spark K-Means Machine learning algorithm has been used to divide the IP's into 2 categories "High" and "Low". CSV file is generated  which is supplied as input to K-Means algorithm. Pseudo code is given below.
+
+\lstinputlisting[language=python, caption=Generate Login Attempts in a CSV File, captionpos=top]{./files/04_GenerateLoginAttemptsCSV.py}
+
+\lstinputlisting[language=python, caption=Applying Spark K-Means Algorithm, captionpos=top]{./files/05_K-Means.py}
+
+\lstinputlisting[language=python, caption=Counting of DOS attacks, captionpos=top]{./files/06_countDOSAttacks.py}
+
+\paragraph{}
+After the above python file is executed, DOS attacks table looks like below.
+
+\begin{table}[H]
+\begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
+ \hline
+ \textbf{S.No.} & \textbf{DOS Cluster} & \textbf{No. of IP's}\\
+ \hline
+ \hline
+ 1 & Severe & 16 \\
+ \hline
+2 & Medium & 5 \\
+\hline
+3 & Low & 1842 \\
+\hline
+\hline
+ & \textbf{Total} & \textbf{1863} \\
+\hline
+\end{tabular}
+ \caption{DOS Attacks Clustering Table}
+\end{table}
+
+\subsubsection{Modified Naive Bayes With K-Means for Sentiment Analysis}
+Based on the commands executed by the 
 
 
 
@@ -491,17 +606,7 @@ All the python codes used for filling the table are given below.
 
 
 
-
-
-
-
-
-
-
-
-
-
-\begin{algorithm}
+\begin{algorithm}[H]
 \caption{Modified Naive Bayes With K-Means Clustering}\label{euclid}
 \begin{algorithmic}[1]
 
@@ -548,6 +653,7 @@ $\centerline{\textit{frequencies are stored in Database}}$
 \end{enumerate}
 
 \end{algorithmic}
+\caption{Modified Naive Bayes For Sentiment Analysis Algorithm}
 \end{algorithm}
 
 
