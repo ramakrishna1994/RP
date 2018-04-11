@@ -57,7 +57,70 @@
 
 \begin{document}
 
- 
+
+\paragraph{}
+\begin{center}
+\textbf{A Project Report }
+\end{center}
+\paragraph{}
+\begin{center}
+on 
+\end{center}
+
+\paragraph{}
+\begin{center}
+\textbf{\large{\textsl{Building Intrusion Detection System Based on the Analysis of Cowrie Honeypot Logs Using Elastic Search, Logstash ,Kibana ,Machine Learning Algorithms and VirusTotal }}}
+\end{center}
+
+\paragraph{}
+\begin{center}
+by 
+\end{center}
+
+\paragraph{}
+\begin{center}
+\textbf{SARADHI RAMAKRISHNA} \\
+2017H1030081H \\
+M.E Computer Science
+\end{center}
+
+\paragraph{}
+\begin{center}
+Under the supervision of \\
+\textbf{CHITTARANJAN HOTA} \\
+\textbf{RAJESH KUMAR SHRIVASTAVA }
+\end{center}
+
+\paragraph{}
+\begin{center}
+SUBMITTED IN FULFILMENT OF THE REQUIREMENTS OF \\
+\textbf{BITS G540 RESEARCH PRACTICE}
+\end{center}
+
+\paragraph{}
+\begin{center}
+\includegraphics[scale=0.1]{bits_logo.png} 
+\end{center}
+
+\paragraph{}
+\begin{center}
+\textbf{BIRLA INSTITUTE OF TECHNOLOGY AND SCIENCE PILANI} \\
+\textbf{HYDERABAD CAMPUS} \\
+\textbf{(APRIL 2018) }
+\end{center}
+
+\thispagestyle{empty}
+\newpage
+
+
+\paragraph{}
+\begin{center}
+\textbf{\Large{ABSTRACT}}
+\end{center}
+\thispagestyle{empty}
+\newpage 
+
+
 \thispagestyle{empty}
  
 \tableofcontents
@@ -558,6 +621,7 @@ This "loginattempts" login is used to predict whether IP is performing DOS attac
 
 \paragraph{}
 After the above python file is executed, DOS attacks table looks like below.
+Some IP's are also performing sniffing attacks where in they login and check for busybox utility.
 
 \begin{table}[H]
 \begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
@@ -578,36 +642,26 @@ After the above python file is executed, DOS attacks table looks like below.
  \caption{DOS Attacks Clustering Table}
 \end{table}
 
-\subsubsection{Modified Naive Bayes With K-Means for Sentiment Analysis}
-Based on the commands executed by the 
+\subsubsection{Modified Naive Bayes With K-Means for Classification}
+\paragraph{}
+Based on the commands executed by the IP, they have been classified into two classes as high and low using Modified Naive Bayes. As all the data is unlabeled , Sentiment analysis cannot be applied using original Naive Bayes.In modified naive Bayes, prior probability is assumed to be one as we have all data which belongs to only attack class. Effective algorithm is given below.
 
+\lstinputlisting[language=python, caption=Modified Naive Bayes Algorithm Code, captionpos=top]{./files/07_Sentiment_Analysis.py}
 
+\paragraph{}
+After the application of Modified Naive Bayes, Posterior Probabilities are generated which are given as input to K-Means algorithm which groups them into clusters. Clusters are designed to be of two types naming high and low.
+Based on the results, below table has been deduced.
 
+\lstinputlisting[language=python, caption=K-Means Algorithm using Spark, captionpos=top]{./files/08_Sentiments_K_means.py}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\lstinputlisting[language=python, caption=K-Means Algorithm using Spark, captionpos=top]{./files/09_ClassifyIPs.py}
 
 
 
 
 
 \begin{algorithm}[H]
-\caption{Modified Naive Bayes With K-Means Clustering}\label{euclid}
+\caption{Modified Naive Bayes With K-Means Clustering Algorithms}\label{euclid}
 \begin{algorithmic}[1]
 
 \State $\textbf{Probability}\textit{(IP is Malicious / Commands executed by IP }\text{) = }$
@@ -651,10 +705,208 @@ $\centerline{\textit{frequencies are stored in Database}}$
    \item \textit{After all data points are assigned to their clusters,move each cluster center to mean of its assigned data points.}
    \item \textit{With new cluster centers, repeat 2 to 3 until there is no convergence.}
 \end{enumerate}
-
 \end{algorithmic}
-\caption{Modified Naive Bayes For Sentiment Analysis Algorithm}
 \end{algorithm}
 
 
+\begin{table}[H]
+\begin{tabular}{ |p{2cm}|p{5cm}|p{5cm}|  }
+ \hline
+ \textbf{S.No.} & \textbf{Cluster Name} & \textbf{No. of IP's}\\
+ \hline
+ \hline
+ 1 & High & 136 \\
+ \hline
+2 & Low & 1842 \\
+\hline
+\hline
+ & \textbf{Total} & \textbf{1978} \\
+\hline
+\end{tabular}
+ \caption{Modified Naive Bayes and K-Means Results}
+\end{table}
+
+\subsubsection{DDOS Binaries}
+\paragraph{}
+Attackers who were able to login successfully has used their access to full effect by deploying the binaries and executable files on the machine and running them remotely whenever needed. Fortunately Cowrie happened to be a medium interaction honeypot which would not allow running any binaries or executable files. Some of the captured binaries are sent to VirusTotal and all of them are identified as serious DDos attacking binaries. Some of them are listed below.
+
+
+
+\begin{table}[h!]
+\begin{center}
+
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ ./lPg5Am8r & ./AObM55mP & ./ScDrDSSt & ./YL88yLHr\\
+ \hline
+ ./Tr5l603l & ./yu5LvV97 & ./VdPacLUl  & ./uzsiO4Hx \\
+ \hline
+ ./BRB3bpfb  & ./PWnQ7Tcn  & ./GgzxWgHv & ./zanTB34C  \\
+ \hline
+ ./udp4858 &  ./kEbIZq9x & ./MvlFggnh & ./6PcycAuj \\
+ \hline
+ ./o3e1ROxG  & ./b1fNqt0C & ./iUk3up10 & ./M7vu30G4 \\
+ \hline
+ ./KAFsqrpv & ./GYOIsFtx & ./tf2SD7fn &  \\
+ \hline
+\end{tabular}
+\caption{List of DDos Binaries}
+\end{center}
+\end{table}
+
+\paragraph{}
+Some of the malicious URL's accessed by the attackers is captured by the cowrie. These are given below in the table.
+
+
+\begin{table}[h!]
+\begin{center}
+
+\begin{tabular}{ |c| } 
+ \hline
+ http://www.bizqsoft.com/tp2/r6.log\\
+ \hline
+ http://185.165.29.196/lmao.sh\\
+ \hline
+ http://mdb7.cn:8081/exp  \\
+ \hline
+ http://203.146.208.208/drago/images/.ssh/y.txt \\
+ \hline
+ http://162.248.4.130/isu80 \\
+ \hline
+ https://doiaru.000webhostapp.com/zeni.txt  \\
+ \hline
+ http://61.147.112.10:1242/udp4858  \\
+ \hline
+ http://104.216.151.157/i3306m  \\
+ \hline
+  http://23.228.113.240/do3309  \\
+ \hline
+  http://23.228.113.240/ys808e  \\
+ \hline
+  http://14.142.118.25/m.sh  \\
+ \hline
+  http://107.189.130.20/ys808e  \\
+ \hline
+  http://192.200.218.166/g3308l  \\
+ \hline
+ 
+ 
+\end{tabular}
+\caption{List of DDos Binaries}
+\end{center}
+\end{table}
+
+
+\paragraph{}
+Based on all the data listed above and tables created in PostgreSQL database and API's from VirusTotal, an intrusion detection system software has been developed which continously monitors the network where commands executed by any IP is noted and sent to the database built. If it is found in the database, it will be reported as malicious. If no information is found about the data in database, it keeps that in a separate column and keeps monitoring. If any anomaly is found, then the database will be updated with the new one. So it is a continous learning process for the software. Code is given below.
+
+\lstinputlisting[language=python, caption=Intrusion Detection System Code, captionpos=top]{./files/16_IDS.py}
+
+\begin{figure}[h!]
+\centering
+\caption{IP Identified as NOT Malicious by IDS}
+\includegraphics[scale=0.7]{IP_not_Malicious_IDS.png}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\caption{IP Identified as Malicious by IDS}
+\includegraphics[scale=0.6]{IP_malicious_IDS.png}
+\end{figure}
+
+\paragraph{}
+Based on the output from the IDS, firewall rules will be updated with the specific IP as blocking or nonblocking.
+
+\paragraph{}
+\textbf{Blocking : }\textit{iptables -A INPUT -s 192.200.218.166 -j DROP}
+
+\paragraph{}
+\textbf{Unblocking : }\textit{iptables -D INPUT -s 192.200.218.165 -j DROP}
+
+\section{Conclusion}
+In this report, we were able to figure out how vulnerable most of the internet devices are and what must be done in order to secure those devices. Recent developements in IOT has forced our hand to look at the security features at a microscopic level and improvements to be done. We have also tried to classify the different types of attacks on different IOT devices and on different ports. We have also tried to design a detection layer called Intrusion Detection System using all the historical and present data and were able to prevent if not detect some of those attacks.A lot has to be done in the security related work and hope everyone will put their hand towards acheiving it.
+
+
+\begin{thebibliography}{9}
+
+
+
+\bibitem{REF-1}
+  Performance of ELK Stack and Commercial System in Security Log Analysis by \textit{ Sung Jun Son and Youngmi Kwon}
+ 
+\bibitem{REF-2}
+Building an IoT Data Hub with Elasticsearch, Logstash and Kibana by \textit{ Marcin Bajer}
+
+\bibitem{REF-3}
+Network security enhancement through effective log analysis using ELK by \textit{ Ibrahim Yahya Mohammed Al-Mahbashi and M. B. Potdar and Prashant Chauhan}
+
+\bibitem{REF-4}
+
+Malware capturing and detection in dionaea honeypot by \textit{ P Dilsheer Ali and T. Gireesh Kumar}
+
+\bibitem{REF-5}
+
+Integration of network intrusion detection systems and honeypot networks for cloud security by \textit{ Varan Mahajan and Sateesh K Peddoju}
+
+
+\bibitem{REF-6}
+  Honeynet Data Analysis and Distributed SSH Brute-Force Attacks by \textit{Gokul Kannan Sadasivam and Chittaranjan Hota and Anand Bhojan}
+  
+\bibitem{REF-7}
+  Detection of Severe SSH Attacks using Honeypot Servers and Machine Learning Techniques by \textit{Gokul Kannan Sadasivam and Chittaranjan Hota and Anand Bhojan S}
+
+
+\bibitem{REF-8}
+  Classification of SSH attacks using Machine learning algorithms  by \textit{Gokul Kannan Sadasivam and Chittaranjan Hota and and Anand Bhojan}
+  
+\bibitem{REF-9}
+
+IoT honeypot: A multi-component solution for handling manual and Mirai-based attacks by \textit{ Sasa Mrdovic and Haris Šemić}
+
+\bibitem{REF-10}
+
+Analysis of modern intrusion detection system by \textit{ Aleksey A. Titorenko and Alexey A. Frolov}
+
+\bibitem{REF-11}
+Clustering Approach Based on Mini Batch Kmeans for Intrusion Detection System Over Big Data by \textit{ Parisa Lotfallahtabrizi and Yasser Morgan}
+
+\bibitem{REF-12}
+Feature selection based intrusion detection system using the combination of DBSCAN, K-Mean++ and SMO algorithms by \textit{ Vandana Shakya and Rajni Ranjan Singh Makwana}
+
+
+\bibitem{REF-13}
+
+DDoS Attack Detection System: Utilizing Classification Algorithms with Apache Spark by \textit{ Amjad Alsirhani and Srinivas Sampalli and Peter Bodorik}
+
+\bibitem{REF-14}
+
+Testing of algorithms for anomaly detection in Big data using apache spark by \textit{ Sheeraz Niaz Lighari and Dil Muhammad Akbar Hussain}
+
+\bibitem{REF-15}
+Feature selection based intrusion detection system using the combination of DBSCAN, K-Mean++ and SMO algorithms by \textit{ Vandana Shakya and Rajni Ranjan Singh Makwana}
+
+
+\bibitem{REF-16}
+
+https://www.virustotal.com
+
+\bibitem{REF-17}
+
+
+Privacy and Security of Cloud-Based Internet of Things (IoT) by \textit{ Tanupriya Choudhury and Ayushi Gupta and Saurabh Pradhan and Praveen Kumar; Yogesh Singh Rathore}
+
+\bibitem{REF-18}
+Internet of Things (IoT) security platforms by \textit{ Ibrahim R. Waz and Mohamed Ali Sobh and Ayman M. Bahaa-Eldin}
+
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
 \end{document}
+

@@ -29,4 +29,6 @@
 \BOOKMARK [2][-]{subsection.5.1}{Malicious-URLs Table}{section.5}% 29
 \BOOKMARK [2][-]{subsection.5.2}{Stats Table}{section.5}% 30
 \BOOKMARK [3][-]{subsubsection.5.2.1}{DOS Attacks}{subsection.5.2}% 31
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Modified Naive Bayes With K-Means for Sentiment Analysis}{subsection.5.2}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Modified Naive Bayes With K-Means for Classification}{subsection.5.2}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.3}{DDOS Binaries}{subsection.5.2}% 33
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 34
