@@ -209,7 +209,7 @@ Date : 10-04-2018
 
 \section{Introduction}
 \paragraph{}
-I was fortunate enough to be able to work on a budding project under the supervision of Professor Chittaranjan Hota from BITS PILANI and Professor Herbert Bos from VRIJE University Amsterdam. The Project was to determine the availability of IoT devices on the internet and vulnerabilties of such devices. 
+I was fortunate enough to be able to work on a budding project under the supervision of Professor Chittaranjan Hota from BITS PILANI and Professor Herbert Bos from VRIJE University Amsterdam. The Project was to determine the availability of all IoT devices on the internet and vulnerabilties of such devices in India and Netherlands. 
 
 \section{Tools}
 \paragraph{}
@@ -224,24 +224,62 @@ Shodan is a search engine that lets the user find specific types of computers (w
 Above is the link of the search engine where user can query and get the results. Unfortunately it allows only first 10,000 results to be fetched at a time. If a user wants more than that , they have to send a request to shodan team for getting access to more than 10K records.
 
 \paragraph{}
-Shodan gives the most of metadata using which we can identify what type of device it is and what are the open ports.Shodan collects data mostly on web servers (HTTP/HTTPS - port 80, 8080, 443, 8443), as well as FTP (port 21), SSH (port 22), Telnet (port 23), SNMP (port 161), IMAP (port 993), SIP (port 5060), and Real Time Streaming Protocol (RTSP, port 554). The latter can be used to access webcams and their video stream.
+Shodan gives the most of metadata using which we can identify what type of device it is and what are the open ports.Shodan collects data mostly on web servers (HTTP/HTTPS - port 80, 8080, 443, 8443), as well as FTP (port 21), SSH (port 22), Telnet (port 23), SNMP (port 161), IMAP (port 993), SIP (port 5060), and Real Time Streaming Protocol (RTSP, port 554). The latter can be used to access webcams and their video stream.It also has REST API support which can be easily integrated with other applications.
+
+\subsection{Nmap}
+Nmap (Network Mapper) is a security scanner, used to discover hosts and services on a computer network, thus building a "map" of the network. To accomplish its goal, Nmap sends specially crafted packets to the target host(s) and then analyzes the responses.The software provides a number of features for probing computer networks, including host discovery and service and operating-system detection. These features are extensible by scripts that provide more advanced service detection,vulnerability detection,and other features. Nmap can adapt to network conditions including latency and congestion during a scan.
+
+\paragraph{}
+Nmap features include:
+\begin{itemize}
+\item Host discovery
+\item Port scanning 
+\item Version detection
+\item OS detection
+\end{itemize}
+
+\subsection{ZMap}
+\paragraph{}
+ZMap is a fast single packet network scanner designed for Internet-wide network surveys. On a computer with a gigabit connection, ZMap can scan the entire public IPv4 address space in under 45 minutes. 
+
+\paragraph{}
+ZMap operates on GNU/Linux, Mac OS, and BSD. ZMap currently has fully implemented probe modules for TCP SYN scans, ICMP, DNS queries, UPnP, BACNET, and can send a large number of UDP probes.
+
+\paragraph{}
+ZMap also provides online platform for searching the IPV4 address space. It is called Censys. It is useful when we are having limitation on computational capability and network reachability.
+
+\subsection{Censys}
+\paragraph{}
+Censys is a platform that helps information security practitioners discover, monitor, and analyze devices that are accessible from the Internet. It regularly probe every public IP address and popular domain names, curate and enrich the resulting data, and make it intelligible through an interactive search engine. Censys also provides API's using which any user can interact with their database. Online search engine link is given below.
+
+\begin{center}
+\textit{https://censys.io/}
+\end{center}
+
+\paragraph{}
+After carefully analyzing all the tools , their functionalities and their limitations, it has beed decided to go with Censys Search engine provided by ZMap project team. But it has a limitation that a normal user can only get access to first 10,000 results of their database.
+
+\paragraph{}
+So, Mails are sent to Censys team and necessary privileges have been granted for us. Using the rest API's , we were able to access only first 10,000 results. So they provided access to their central database using Google BigQuery platform.
+
+\subsection{Google BigQuery}
+\paragraph{}
+BigQuery is Google's serverless, highly scalable, low cost enterprise data warehouse designed to make all your data analysts productive. BigQuery enables us to analyze all our data by creating a logical data warehouse over managed, columnar storage as well as data from object storage, and spreadsheets.
+
+\begin{figure}[h!]
+\centering
+\caption{Google BigQuery Engine}
+\includegraphics[scale=0.2]{google_big_query}
+\end{figure}
+
+\paragraph{}
+Google BigQuery engine looks like above. After we got access to their entire database, we started running queries to get the data of India and Netherlands entire database of all open devices and their ports.
 
 
-\subsection{Mass Scan}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+\newpage
 \chapter{Analysis and Design of IDS using Honeypots}
 
 \section{Introduction of Tools}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.3.27)  11 APR 2018 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.3.27)  13 APR 2018 15:59
 entering extended mode
 **./report.tex
 (report.tex
@@ -716,7 +716,7 @@ LaTeX Info: Redefining \nameref on input line 59.
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-<./images/bits_logo.png, id=91, 604.2575pt x 604.2575pt>
+<./images/bits_logo.png, id=107, 604.2575pt x 604.2575pt>
 File: ./images/bits_logo.png Graphic file (type png)
 <use ./images/bits_logo.png>
 Package pdftex.def Info: ./images/bits_logo.png  used on input line 96.
@@ -769,318 +769,351 @@ been already used, duplicate ignored
 l.228 
        [1
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 235.
+
+ (/home/iotsys3/.miktex/texmfs/install/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 235.
+
+Overfull \hbox (0.97275pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 Censys also provides API's using which any user can interact wi
+th their database.
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.243 \chapter
-              {Analysis and Design of IDS using Honeypots} [2]
-Chapter 2.
+l.254 
+       [2]
+Overfull \hbox (7.44518pt too wide) in paragraph at lines 260--261
+ [][] \OT1/cmr/m/n/10 After carefully analyzing all the tools , their functiona
+lities and their limitations,
+ []
 
-Overfull \hbox (9.91731pt too wide) in paragraph at lines 267--268
-\OT1/cmr/m/n/10 provides visualization capabilities on top of the content index
-ed on an Elasticsearch
+
+Overfull \hbox (0.43585pt too wide) in paragraph at lines 267--268
+\OT1/cmr/m/n/10 warehouse designed to make all your data analysts productive. B
+igQuery enables
+ []
+
+<./images/google_big_query.png, id=282, 1861.95625pt x 984.67876pt>
+File: ./images/google_big_query.png Graphic file (type png)
+<use ./images/google_big_query.png>
+Package pdftex.def Info: ./images/google_big_query.png  used on input line 272.
+
+(pdftex.def)             Requested size: 372.38466pt x 196.93225pt.
+
+Overfull \hbox (27.38466pt too wide) in paragraph at lines 272--273
+ [][] 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.274 \paragraph
-                {} [3
-
-]
-Overfull \hbox (4.16628pt too wide) in paragraph at lines 294--295
- [][] \OT1/cmr/m/n/10 Medium-interaction honeypots might more fully implement t
-he HTTP protocol
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
+l.277 
+       [3 <./images/google_big_query.png>]pdfTeX warning (ext4): destination wi
+th the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.299 \paragraph
-                {} [4]
+l.282 \newpage
+               [4]
+Chapter 2.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (9.91731pt too wide) in paragraph at lines 307--308
+\OT1/cmr/m/n/10 provides visualization capabilities on top of the content index
+ed on an Elasticsearch
+ []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.363 
-       [5]
-<./images/Elastic_Search_Installation.png, id=295, 518.93875pt x 285.065pt>
-File: ./images/Elastic_Search_Installation.png Graphic file (type png)
-<use ./images/Elastic_Search_Installation.png>
-Package pdftex.def Info: ./images/Elastic_Search_Installation.png  used on inpu
-t line 388.
-(pdftex.def)             Requested size: 363.25465pt x 199.54413pt.
+l.314 \paragraph
+                {} [5
 
-Overfull \hbox (18.25465pt too wide) in paragraph at lines 388--389
- [][] 
+]
+Overfull \hbox (4.16628pt too wide) in paragraph at lines 334--335
+ [][] \OT1/cmr/m/n/10 Medium-interaction honeypots might more fully implement t
+he HTTP protocol
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 \end{figure}
-                   [6]
-<./images/Kibana_Installation.png, id=308, 1862.96pt x 1061.9675pt>
-File: ./images/Kibana_Installation.png Graphic file (type png)
-<use ./images/Kibana_Installation.png>
-Package pdftex.def Info: ./images/Kibana_Installation.png  used on input line 4
-21.
-(pdftex.def)             Requested size: 409.85248pt x 233.63356pt.
+l.339 \paragraph
+                {} [6]
 
-Overfull \hbox (64.85248pt too wide) in paragraph at lines 421--422
- [][] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.423 
-       [7 <./images/Elastic_Search_Installation.png>]
-Overfull \hbox (0.5199pt too wide) in paragraph at lines 434--435
+l.403 
+       [7]
+<./images/Elastic_Search_Installation.png, id=336, 518.93875pt x 285.065pt>
+File: ./images/Elastic_Search_Installation.png Graphic file (type png)
+<use ./images/Elastic_Search_Installation.png>
+Package pdftex.def Info: ./images/Elastic_Search_Installation.png  used on inpu
+t line 428.
+(pdftex.def)             Requested size: 363.25465pt x 199.54413pt.
+
+Overfull \hbox (18.25465pt too wide) in paragraph at lines 428--429
+ [][] 
+ []
+
+[8]
+<./images/Kibana_Installation.png, id=348, 1862.96pt x 1061.9675pt>
+File: ./images/Kibana_Installation.png Graphic file (type png)
+<use ./images/Kibana_Installation.png>
+Package pdftex.def Info: ./images/Kibana_Installation.png  used on input line 4
+61.
+(pdftex.def)             Requested size: 409.85248pt x 233.63356pt.
+
+Overfull \hbox (64.85248pt too wide) in paragraph at lines 461--462
+ [][] 
+ []
+
+[9 <./images/Elastic_Search_Installation.png>]
+Overfull \hbox (0.5199pt too wide) in paragraph at lines 474--475
 []\OT1/cmr/m/it/10 iotsys3@iotsys3-Precision-Tower-3420:[] sudo apt-get install
  git python-virtualenv
  []
 
 
-Overfull \hbox (48.67651pt too wide) in paragraph at lines 441--443
+Overfull \hbox (48.67651pt too wide) in paragraph at lines 481--483
 []\OT1/cmr/m/it/10 iotsys3@iotsys3-Precision-Tower-3420:[] git clone http://git
 hub.com/micheloosterhof/cowrie 
  []
 
-[8 <./images/Kibana_Installation.png>]
-Overfull \hbox (3.02644pt too wide) in paragraph at lines 453--454
+[10 <./images/Kibana_Installation.png>]
+Overfull \hbox (3.02644pt too wide) in paragraph at lines 493--494
  [][] \OT1/cmr/m/n/10 In the same folder, create a copy of \OT1/cmr/m/it/10 cow
 rie.cfg.dist \OT1/cmr/m/n/10 and modify the file according
  []
 
-<./images/Working_Model.png, id=329, 592.2125pt x 861.2175pt>
+<./images/Working_Model.png, id=370, 592.2125pt x 861.2175pt>
 File: ./images/Working_Model.png Graphic file (type png)
 <use ./images/Working_Model.png>
-Package pdftex.def Info: ./images/Working_Model.png  used on input line 469.
+Package pdftex.def Info: ./images/Working_Model.png  used on input line 509.
 (pdftex.def)             Requested size: 325.71788pt x 473.67108pt.
-[9]
-<./images/Monitoring_System.png, id=339, 670.505pt x 455.7025pt>
+[11]
+<./images/Monitoring_System.png, id=380, 670.505pt x 455.7025pt>
 File: ./images/Monitoring_System.png Graphic file (type png)
 <use ./images/Monitoring_System.png>
-Package pdftex.def Info: ./images/Monitoring_System.png  used on input line 477
+Package pdftex.def Info: ./images/Monitoring_System.png  used on input line 517
 .
 (pdftex.def)             Requested size: 368.7789pt x 250.63713pt.
 
-Overfull \hbox (23.7789pt too wide) in paragraph at lines 477--478
+Overfull \hbox (23.7789pt too wide) in paragraph at lines 517--518
  [][] 
  []
 
-[10 <./images/Working_Model.png>]
+[12 <./images/Working_Model.png>]
 (/home/iotsys3/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (cowrie.conf
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1.
- (/home/iotsys3/.miktex/texmfs/install/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 3.
-
-(/home/iotsys3/.miktex/texmfs/install/tex/latex/base/omlcmr.fd
+ (/home/iotsys3/.miktex/texmfs/install/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 3.
- [11 <./images/Monitoring_System.png>]) [12]
-<./images/Daily_Attacks_Count.png, id=418, 1654.18pt x 844.15375pt>
+
+[13 <./images/Monitoring_System.png>]) [14]
+<./images/Daily_Attacks_Count.png, id=459, 1654.18pt x 844.15375pt>
 File: ./images/Daily_Attacks_Count.png Graphic file (type png)
 <use ./images/Daily_Attacks_Count.png>
 Package pdftex.def Info: ./images/Daily_Attacks_Count.png  used on input line 5
-13.
+53.
 (pdftex.def)             Requested size: 330.83014pt x 168.82776pt.
- [13]
-<./images/Username_Histogram.png, id=434, 1317.92375pt x 839.135pt>
+ [15]
+<./images/Username_Histogram.png, id=475, 1317.92375pt x 839.135pt>
 File: ./images/Username_Histogram.png Graphic file (type png)
 <use ./images/Username_Histogram.png>
-Package pdftex.def Info: ./images/Username_Histogram.png  used on input line 52
+Package pdftex.def Info: ./images/Username_Histogram.png  used on input line 56
 4.
 (pdftex.def)             Requested size: 263.58008pt x 167.82402pt.
- [14 <./images/Daily_Attacks_Count.png> <./images/Username_Histogram.png>]
-<./images/Unique_IP.png, id=443, 807.015pt x 306.14375pt>
+ [16 <./images/Daily_Attacks_Count.png> <./images/Username_Histogram.png>]
+<./images/Unique_IP.png, id=484, 807.015pt x 306.14375pt>
 File: ./images/Unique_IP.png Graphic file (type png)
 <use ./images/Unique_IP.png>
-Package pdftex.def Info: ./images/Unique_IP.png  used on input line 537.
+Package pdftex.def Info: ./images/Unique_IP.png  used on input line 577.
 (pdftex.def)             Requested size: 403.50652pt x 153.07149pt.
 
-Overfull \hbox (58.50652pt too wide) in paragraph at lines 537--538
+Overfull \hbox (58.50652pt too wide) in paragraph at lines 577--578
  [][] 
  []
 
-<./images/Passwords_Pie.png, id=444, 1283.79625pt x 755.82375pt>
+<./images/Passwords_Pie.png, id=485, 1283.79625pt x 755.82375pt>
 File: ./images/Passwords_Pie.png Graphic file (type png)
 <use ./images/Passwords_Pie.png>
-Package pdftex.def Info: ./images/Passwords_Pie.png  used on input line 547.
+Package pdftex.def Info: ./images/Passwords_Pie.png  used on input line 587.
 (pdftex.def)             Requested size: 372.29138pt x 219.18327pt.
 
-Overfull \hbox (27.29138pt too wide) in paragraph at lines 547--548
+Overfull \hbox (27.29138pt too wide) in paragraph at lines 587--588
  [][] 
  []
 
-[15 <./images/Unique_IP.png> <./images/Passwords_Pie.png>]
-Overfull \hbox (0.38837pt too wide) in paragraph at lines 552--553
+[17 <./images/Unique_IP.png> <./images/Passwords_Pie.png>]
+Overfull \hbox (0.38837pt too wide) in paragraph at lines 592--593
  [][] \OT1/cmr/m/n/10 A map is also plotted against the attacks receiving from 
 different contries
  []
 
-<./images/Global_Attacks_Map.png, id=452, 1254.6875pt x 815.045pt>
+<./images/Global_Attacks_Map.png, id=493, 1254.6875pt x 815.045pt>
 File: ./images/Global_Attacks_Map.png Graphic file (type png)
 <use ./images/Global_Attacks_Map.png>
-Package pdftex.def Info: ./images/Global_Attacks_Map.png  used on input line 55
+Package pdftex.def Info: ./images/Global_Attacks_Map.png  used on input line 59
 7.
 (pdftex.def)             Requested size: 376.40915pt x 244.51538pt.
 
-Overfull \hbox (31.40915pt too wide) in paragraph at lines 557--558
+Overfull \hbox (31.40915pt too wide) in paragraph at lines 597--598
  [][] 
  []
 
 
-Overfull \hbox (16.10255pt too wide) in paragraph at lines 564--565
+Overfull \hbox (16.10255pt too wide) in paragraph at lines 604--605
 \OT1/cmr/m/n/10 with probabilities associated to it. While exact path cannot be
  inferred, assumptions
  []
 
-<./images/Stochastic_Process.png, id=453, 575.14874pt x 287.0725pt>
+<./images/Stochastic_Process.png, id=494, 575.14874pt x 287.0725pt>
 File: ./images/Stochastic_Process.png Graphic file (type png)
 <use ./images/Stochastic_Process.png>
-Package pdftex.def Info: ./images/Stochastic_Process.png  used on input line 56
+Package pdftex.def Info: ./images/Stochastic_Process.png  used on input line 60
 9.
 (pdftex.def)             Requested size: 402.60138pt x 200.94937pt.
 
-Overfull \hbox (57.60138pt too wide) in paragraph at lines 569--570
+Overfull \hbox (57.60138pt too wide) in paragraph at lines 609--610
  [][] 
  []
 
-[16 <./images/Global_Attacks_Map.png>]
-Overfull \hbox (11.6673pt too wide) in paragraph at lines 574--575
+[18 <./images/Global_Attacks_Map.png>]
+Overfull \hbox (11.6673pt too wide) in paragraph at lines 614--615
  [][] \OT1/cmr/m/n/10 An Intrusion Detection System is a software application w
 hich regularly monitors
  []
 
 
-Overfull \hbox (34.03304pt too wide) in paragraph at lines 585--597
+Overfull \hbox (34.03304pt too wide) in paragraph at lines 625--637
 [][] 
  []
 
-<./images/Intrusion_Detection_System.png, id=461, 553.06625pt x 480.79625pt>
+<./images/Intrusion_Detection_System.png, id=503, 553.06625pt x 480.79625pt>
 File: ./images/Intrusion_Detection_System.png Graphic file (type png)
 <use ./images/Intrusion_Detection_System.png>
 Package pdftex.def Info: ./images/Intrusion_Detection_System.png  used on input
- line 606.
+ line 646.
 (pdftex.def)             Requested size: 387.14374pt x 336.55507pt.
 
-Overfull \hbox (42.14374pt too wide) in paragraph at lines 606--607
+Overfull \hbox (42.14374pt too wide) in paragraph at lines 646--647
  [][] 
  []
 
-[17 <./images/Stochastic_Process.png>]
-Overfull \hbox (34.03304pt too wide) in paragraph at lines 612--628
+[19 <./images/Stochastic_Process.png>]
+Overfull \hbox (34.03304pt too wide) in paragraph at lines 652--668
 [][] 
  []
 
-[18 <./images/Intrusion_Detection_System.png>]
+[20 <./images/Intrusion_Detection_System.png>]
 (files/12-GetMaliciousURLsFromIPsUsingVirusTotal.py
 Overfull \hbox (1.40723pt too wide) in paragraph at lines 5--6
 [][][][] 
  []
 
-[19]) (files/13-AddURLsToDB.py) (files/14-SubmitURLsForScanUsingVirusTotal.py
+[21]) (files/13-AddURLsToDB.py) (files/14-SubmitURLsForScanUsingVirusTotal.py
 Overfull \hbox (1.40723pt too wide) in paragraph at lines 6--7
 [][][][] 
  []
 
-[20]) (files/15-GetURLScanResults.py
+[22]) (files/15-GetURLScanResults.py
 Overfull \hbox (1.40723pt too wide) in paragraph at lines 7--8
 [][][][] 
  []
 
-[21]) (files/response.txt)
-Overfull \hbox (34.03304pt too wide) in paragraph at lines 659--677
+[23]) (files/response.txt)
+Overfull \hbox (34.03304pt too wide) in paragraph at lines 699--717
 [][] 
  []
 
-[22] (files/01_GetUniqueIPs.py [23]) (files/02_GetCommandsForIPs.py [24]
-[25]) (files/03_getLoginAttemptsForIPs.py [26])
-(files/04_GenerateLoginAttemptsCSV.py) (files/05_K-Means.py [27])
-(files/06_countDOSAttacks.py [28]) [29]
-Overfull \hbox (34.03304pt too wide) in paragraph at lines 734--749
+[24] (files/01_GetUniqueIPs.py [25]) (files/02_GetCommandsForIPs.py [26]
+[27]) (files/03_getLoginAttemptsForIPs.py [28])
+(files/04_GenerateLoginAttemptsCSV.py) (files/05_K-Means.py [29])
+(files/06_countDOSAttacks.py [30]) [31]
+Overfull \hbox (34.03304pt too wide) in paragraph at lines 774--789
 [][] 
  []
 
-(files/07_Sentiment_Analysis.py [30]) (files/08_Sentiments_K_means.py [31])
-(files/09_ClassifyIPs.py [32])
+(files/07_Sentiment_Analysis.py [32]) (files/08_Sentiments_K_means.py [33])
+(files/09_ClassifyIPs.py [34])
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 771.
+put line 811.
 
-Overfull \hbox (77.29466pt too wide) detected at line 777
+Overfull \hbox (77.29466pt too wide) detected at line 817
 []
  []
 
 
-Overfull \hbox (16.14072pt too wide) in paragraph at lines 778--779
+Overfull \hbox (16.14072pt too wide) in paragraph at lines 818--819
 []$[][]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--789
+Underfull \hbox (badness 10000) in paragraph at lines 827--829
 []$[][]$
  []
 
 
-Overfull \hbox (16.99998pt too wide) in paragraph at lines 787--789
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 827--829
 []$ 
  []
 
 
-Overfull \hbox (28.57379pt too wide) in paragraph at lines 795--796
+Overfull \hbox (28.57379pt too wide) in paragraph at lines 835--836
 [] $[] [][] [][][][][]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 802--806
+Underfull \hbox (badness 10000) in paragraph at lines 842--846
 []$[][][]$
  []
 
 
-Overfull \hbox (40.80858pt too wide) in paragraph at lines 802--806
+Overfull \hbox (40.80858pt too wide) in paragraph at lines 842--846
 []$
  []
 
 
-Overfull \hbox (16.99998pt too wide) in paragraph at lines 802--806
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 842--846
 []$
  []
 
 
-Overfull \hbox (16.99998pt too wide) in paragraph at lines 802--806
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 842--846
 []$
  []
 
 
-Overfull \hbox (16.99998pt too wide) in paragraph at lines 802--806
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 842--846
 []$ 
  []
 
-[33]
-Overfull \hbox (34.03304pt too wide) in paragraph at lines 820--833
+[35]
+Overfull \hbox (34.03304pt too wide) in paragraph at lines 860--873
 [][] 
  []
 
-[34] [35] (files/16_IDS.py [36]
+[36] [37] (files/16_IDS.py [38]
 Overfull \hbox (42.20813pt too wide) in paragraph at lines 53--54
 [][][][] 
  []
@@ -1091,60 +1124,60 @@ Overfull \hbox (42.20813pt too wide) in paragraph at lines 55--57
  []
 
 )
-<./images/IP_not_Malicious_IDS.png, id=1266, 536.0025pt x 61.22874pt>
+<./images/IP_not_Malicious_IDS.png, id=1306, 536.0025pt x 61.22874pt>
 File: ./images/IP_not_Malicious_IDS.png Graphic file (type png)
 <use ./images/IP_not_Malicious_IDS.png>
 Package pdftex.def Info: ./images/IP_not_Malicious_IDS.png  used on input line 
-915.
+955.
 (pdftex.def)             Requested size: 375.19919pt x 42.8598pt.
 
-Overfull \hbox (30.19919pt too wide) in paragraph at lines 915--916
+Overfull \hbox (30.19919pt too wide) in paragraph at lines 955--956
  [][] 
  []
 
-<./images/IP_malicious_IDS.png, id=1267, 658.46pt x 616.3025pt>
+<./images/IP_malicious_IDS.png, id=1307, 658.46pt x 616.3025pt>
 File: ./images/IP_malicious_IDS.png Graphic file (type png)
 <use ./images/IP_malicious_IDS.png>
-Package pdftex.def Info: ./images/IP_malicious_IDS.png  used on input line 921.
+Package pdftex.def Info: ./images/IP_malicious_IDS.png  used on input line 961.
 
 (pdftex.def)             Requested size: 395.07906pt x 369.78435pt.
 
-Overfull \hbox (50.07906pt too wide) in paragraph at lines 921--922
+Overfull \hbox (50.07906pt too wide) in paragraph at lines 961--962
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37 <./images/IP_not_Malicious_IDS.png>] [38 <./images/IP_malicious_IDS.png>]
-[39
+[39 <./images/IP_not_Malicious_IDS.png>] [40 <./images/IP_malicious_IDS.png>]
+[41
 
 ]
-Underfull \hbox (badness 1748) in paragraph at lines 1003--1004
+Underfull \hbox (badness 1748) in paragraph at lines 1043--1044
 []\OT1/cmr/m/n/10 Privacy and Security of Cloud-Based Internet of Things (IoT) 
 by
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1018.
-[40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1018.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1058.
+[42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1058.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1018.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1018.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1058.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1058.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0BBF8961D46E58C4E0D548356CF66DD9;1404.
+(rerunfilecheck)             Checksum: A0CDA8C6E3F8FBF46B2C9FD9FD41FC10;1649.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1018.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1058.
  ) 
 Here is how much of TeX's memory you used:
- 10537 strings out of 495223
- 151547 string characters out of 3181567
- 433343 words of memory out of 3000000
- 12644 multiletter control sequences out of 15000+200000
+ 10564 strings out of 495223
+ 151998 string characters out of 3181567
+ 433491 words of memory out of 3000000
+ 12654 multiletter control sequences out of 15000+200000
  11119 words of font info for 39 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  29i,10n,43p,700b,2021s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1164,9 +1197,9 @@ r5.pfb></home/iotsys3/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
 8.pfb></home/iotsys3/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></home/iotsys3/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmt
 i7.pfb>
-Output written on report.pdf (47 pages, 1749650 bytes).
+Output written on report.pdf (49 pages, 1877206 bytes).
 PDF statistics:
- 1585 PDF objects out of 1728 (max. 8388607)
- 1020 named destinations out of 1200 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1629 PDF objects out of 1728 (max. 8388607)
+ 1036 named destinations out of 1200 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
