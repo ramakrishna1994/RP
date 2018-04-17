@@ -34,99 +34,105 @@
 \contentsline {subsection}{\numberline {1.2.5}Google BigQuery}{3}{subsection.1.2.5}
 \contentsline {paragraph}{}{3}{section*.31}
 \contentsline {paragraph}{}{4}{section*.32}
-\contentsline {chapter}{\numberline {2}Analysis and Design of IDS using Honeypots}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction of Tools}{5}{section.2.1}
-\contentsline {paragraph}{}{5}{section*.33}
-\contentsline {subsection}{\numberline {2.1.1}ELK Stack}{5}{subsection.2.1.1}
-\contentsline {paragraph}{}{5}{section*.34}
-\contentsline {subsubsection}{Elastic Search}{5}{section*.35}
-\contentsline {paragraph}{}{5}{section*.36}
-\contentsline {subsubsection}{Logstash}{5}{section*.37}
-\contentsline {paragraph}{}{5}{section*.38}
-\contentsline {subsubsection}{Kibana}{5}{section*.39}
-\contentsline {paragraph}{}{5}{section*.40}
-\contentsline {subsection}{\numberline {2.1.2}Honeypots}{6}{subsection.2.1.2}
-\contentsline {paragraph}{}{6}{section*.41}
-\contentsline {paragraph}{}{6}{section*.42}
-\contentsline {paragraph}{}{6}{section*.43}
-\contentsline {subsubsection}{Low-interaction honeypots}{6}{section*.44}
-\contentsline {paragraph}{}{6}{section*.45}
-\contentsline {paragraph}{}{6}{section*.46}
-\contentsline {subsubsection}{Medium-interaction honeypots}{6}{section*.47}
-\contentsline {paragraph}{}{6}{section*.48}
-\contentsline {subsubsection}{High-interaction honeypots}{6}{section*.49}
-\contentsline {paragraph}{}{6}{section*.50}
-\contentsline {paragraph}{}{7}{section*.51}
-\contentsline {subsubsection}{Cowrie Honeypot}{7}{section*.52}
-\contentsline {paragraph}{}{7}{section*.53}
-\contentsline {paragraph}{Interesting Features of Cowrie Honeypot}{7}{section*.54}
-\contentsline {subsection}{\numberline {2.1.3}VirusTotal}{7}{subsection.2.1.3}
-\contentsline {paragraph}{}{7}{section*.55}
-\contentsline {paragraph}{}{7}{section*.56}
-\contentsline {subsubsection}{List of Anti-Virus Engines used by VirusTotal}{8}{section*.57}
-\contentsline {subsection}{\numberline {2.1.4}Github}{8}{subsection.2.1.4}
-\contentsline {paragraph}{}{8}{section*.58}
-\contentsline {paragraph}{}{8}{section*.59}
-\contentsline {section}{\numberline {2.2}Installation of Tools}{8}{section.2.2}
-\contentsline {paragraph}{}{8}{section*.60}
-\contentsline {subsection}{\numberline {2.2.1}Elastic Search}{8}{subsection.2.2.1}
-\contentsline {paragraph}{}{9}{section*.61}
-\contentsline {paragraph}{}{9}{section*.62}
-\contentsline {subsection}{\numberline {2.2.2}Logstash}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Kibana}{9}{subsection.2.2.3}
-\contentsline {paragraph}{}{10}{section*.63}
-\contentsline {subsection}{\numberline {2.2.4}Cowrie Honeypot}{10}{subsection.2.2.4}
-\contentsline {paragraph}{}{10}{section*.64}
-\contentsline {subsubsection}{Install dependencies }{10}{section*.65}
-\contentsline {subsubsection}{Create a user account }{10}{section*.66}
-\contentsline {subsubsection}{Checkout the code }{10}{section*.67}
-\contentsline {subsubsection}{Setup Virtual Environment }{11}{section*.68}
-\contentsline {subsubsection}{Port redirection }{11}{section*.69}
-\contentsline {paragraph}{}{11}{section*.70}
-\contentsline {subsubsection}{Starting Cowrie }{11}{section*.71}
-\contentsline {paragraph}{}{11}{section*.72}
-\contentsline {section}{\numberline {2.3}Working Model}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Monitoring System}{13}{section.2.4}
-\contentsline {paragraph}{}{13}{section*.73}
-\contentsline {paragraph}{}{13}{section*.74}
-\contentsline {paragraph}{}{15}{section*.75}
-\contentsline {paragraph}{}{15}{section*.76}
-\contentsline {paragraph}{}{15}{section*.77}
-\contentsline {paragraph}{}{15}{section*.78}
-\contentsline {paragraph}{}{15}{section*.79}
-\contentsline {paragraph}{}{15}{section*.80}
-\contentsline {paragraph}{}{16}{section*.81}
-\contentsline {paragraph}{}{16}{section*.82}
-\contentsline {paragraph}{}{17}{section*.83}
-\contentsline {paragraph}{}{17}{section*.84}
+\contentsline {paragraph}{}{4}{section*.33}
+\contentsline {paragraph}{}{4}{section*.34}
+\contentsline {paragraph}{}{5}{section*.35}
+\contentsline {paragraph}{}{6}{section*.36}
+\contentsline {paragraph}{}{6}{section*.37}
+\contentsline {paragraph}{}{6}{section*.38}
+\contentsline {chapter}{\numberline {2}Analysis and Design of IDS using Honeypots}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction of Tools}{8}{section.2.1}
+\contentsline {paragraph}{}{8}{section*.39}
+\contentsline {subsection}{\numberline {2.1.1}ELK Stack}{8}{subsection.2.1.1}
+\contentsline {paragraph}{}{8}{section*.40}
+\contentsline {subsubsection}{Elastic Search}{8}{section*.41}
+\contentsline {paragraph}{}{8}{section*.42}
+\contentsline {subsubsection}{Logstash}{8}{section*.43}
+\contentsline {paragraph}{}{8}{section*.44}
+\contentsline {subsubsection}{Kibana}{8}{section*.45}
+\contentsline {paragraph}{}{8}{section*.46}
+\contentsline {subsection}{\numberline {2.1.2}Honeypots}{9}{subsection.2.1.2}
+\contentsline {paragraph}{}{9}{section*.47}
+\contentsline {paragraph}{}{9}{section*.48}
+\contentsline {paragraph}{}{9}{section*.49}
+\contentsline {subsubsection}{Low-interaction honeypots}{9}{section*.50}
+\contentsline {paragraph}{}{9}{section*.51}
+\contentsline {paragraph}{}{9}{section*.52}
+\contentsline {subsubsection}{Medium-interaction honeypots}{9}{section*.53}
+\contentsline {paragraph}{}{9}{section*.54}
+\contentsline {subsubsection}{High-interaction honeypots}{9}{section*.55}
+\contentsline {paragraph}{}{9}{section*.56}
+\contentsline {paragraph}{}{10}{section*.57}
+\contentsline {subsubsection}{Cowrie Honeypot}{10}{section*.58}
+\contentsline {paragraph}{}{10}{section*.59}
+\contentsline {paragraph}{Interesting Features of Cowrie Honeypot}{10}{section*.60}
+\contentsline {subsection}{\numberline {2.1.3}VirusTotal}{10}{subsection.2.1.3}
+\contentsline {paragraph}{}{10}{section*.61}
+\contentsline {paragraph}{}{10}{section*.62}
+\contentsline {subsubsection}{List of Anti-Virus Engines used by VirusTotal}{11}{section*.63}
+\contentsline {subsection}{\numberline {2.1.4}Github}{11}{subsection.2.1.4}
+\contentsline {paragraph}{}{11}{section*.64}
+\contentsline {paragraph}{}{11}{section*.65}
+\contentsline {section}{\numberline {2.2}Installation of Tools}{11}{section.2.2}
+\contentsline {paragraph}{}{11}{section*.66}
+\contentsline {subsection}{\numberline {2.2.1}Elastic Search}{11}{subsection.2.2.1}
+\contentsline {paragraph}{}{12}{section*.67}
+\contentsline {paragraph}{}{12}{section*.68}
+\contentsline {subsection}{\numberline {2.2.2}Logstash}{12}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Kibana}{12}{subsection.2.2.3}
+\contentsline {paragraph}{}{13}{section*.69}
+\contentsline {subsection}{\numberline {2.2.4}Cowrie Honeypot}{13}{subsection.2.2.4}
+\contentsline {paragraph}{}{13}{section*.70}
+\contentsline {subsubsection}{Install dependencies }{13}{section*.71}
+\contentsline {subsubsection}{Create a user account }{13}{section*.72}
+\contentsline {subsubsection}{Checkout the code }{13}{section*.73}
+\contentsline {subsubsection}{Setup Virtual Environment }{14}{section*.74}
+\contentsline {subsubsection}{Port redirection }{14}{section*.75}
+\contentsline {paragraph}{}{14}{section*.76}
+\contentsline {subsubsection}{Starting Cowrie }{14}{section*.77}
+\contentsline {paragraph}{}{14}{section*.78}
+\contentsline {section}{\numberline {2.3}Working Model}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Monitoring System}{16}{section.2.4}
+\contentsline {paragraph}{}{16}{section*.79}
+\contentsline {paragraph}{}{16}{section*.80}
+\contentsline {paragraph}{}{18}{section*.81}
+\contentsline {paragraph}{}{18}{section*.82}
+\contentsline {paragraph}{}{18}{section*.83}
+\contentsline {paragraph}{}{18}{section*.84}
 \contentsline {paragraph}{}{18}{section*.85}
-\contentsline {subsection}{\numberline {2.4.1}Stochastic Process}{18}{subsection.2.4.1}
 \contentsline {paragraph}{}{18}{section*.86}
-\contentsline {section}{\numberline {2.5}Intrusion Detection System}{19}{section.2.5}
 \contentsline {paragraph}{}{19}{section*.87}
 \contentsline {paragraph}{}{19}{section*.88}
-\contentsline {paragraph}{}{19}{section*.89}
-\contentsline {subsection}{\numberline {2.5.1}Malicious-URLs Table}{21}{subsection.2.5.1}
-\contentsline {paragraph}{}{21}{section*.90}
-\contentsline {paragraph}{}{24}{section*.91}
-\contentsline {paragraph}{}{24}{section*.92}
-\contentsline {subsection}{\numberline {2.5.2}Stats Table}{25}{subsection.2.5.2}
-\contentsline {paragraph}{}{25}{section*.93}
-\contentsline {paragraph}{}{25}{section*.94}
-\contentsline {paragraph}{}{26}{section*.95}
-\contentsline {paragraph}{}{28}{section*.96}
-\contentsline {paragraph}{}{29}{section*.97}
-\contentsline {subsubsection}{DOS Attacks}{29}{section*.98}
-\contentsline {paragraph}{}{29}{section*.99}
-\contentsline {paragraph}{}{32}{section*.100}
-\contentsline {subsubsection}{Modified Naive Bayes With K-Means for Classification}{32}{section*.101}
-\contentsline {paragraph}{}{32}{section*.102}
-\contentsline {paragraph}{}{33}{section*.103}
-\contentsline {subsubsection}{DDOS Binaries}{37}{section*.104}
-\contentsline {paragraph}{}{37}{section*.105}
-\contentsline {paragraph}{}{37}{section*.106}
-\contentsline {paragraph}{}{38}{section*.107}
-\contentsline {paragraph}{}{39}{section*.108}
-\contentsline {paragraph}{}{39}{section*.109}
-\contentsline {paragraph}{}{39}{section*.110}
-\contentsline {section}{\numberline {2.6}Conclusion}{40}{section.2.6}
+\contentsline {paragraph}{}{20}{section*.89}
+\contentsline {paragraph}{}{20}{section*.90}
+\contentsline {paragraph}{}{21}{section*.91}
+\contentsline {subsection}{\numberline {2.4.1}Stochastic Process}{21}{subsection.2.4.1}
+\contentsline {paragraph}{}{21}{section*.92}
+\contentsline {section}{\numberline {2.5}Intrusion Detection System}{22}{section.2.5}
+\contentsline {paragraph}{}{22}{section*.93}
+\contentsline {paragraph}{}{22}{section*.94}
+\contentsline {paragraph}{}{22}{section*.95}
+\contentsline {subsection}{\numberline {2.5.1}Malicious-URLs Table}{24}{subsection.2.5.1}
+\contentsline {paragraph}{}{24}{section*.96}
+\contentsline {paragraph}{}{27}{section*.97}
+\contentsline {paragraph}{}{27}{section*.98}
+\contentsline {subsection}{\numberline {2.5.2}Stats Table}{28}{subsection.2.5.2}
+\contentsline {paragraph}{}{28}{section*.99}
+\contentsline {paragraph}{}{28}{section*.100}
+\contentsline {paragraph}{}{29}{section*.101}
+\contentsline {paragraph}{}{31}{section*.102}
+\contentsline {paragraph}{}{32}{section*.103}
+\contentsline {subsubsection}{DOS Attacks}{32}{section*.104}
+\contentsline {paragraph}{}{32}{section*.105}
+\contentsline {paragraph}{}{35}{section*.106}
+\contentsline {subsubsection}{Modified Naive Bayes With K-Means for Classification}{35}{section*.107}
+\contentsline {paragraph}{}{35}{section*.108}
+\contentsline {paragraph}{}{36}{section*.109}
+\contentsline {subsubsection}{DDOS Binaries}{40}{section*.110}
+\contentsline {paragraph}{}{40}{section*.111}
+\contentsline {paragraph}{}{40}{section*.112}
+\contentsline {paragraph}{}{41}{section*.113}
+\contentsline {paragraph}{}{42}{section*.114}
+\contentsline {paragraph}{}{42}{section*.115}
+\contentsline {paragraph}{}{42}{section*.116}
+\contentsline {section}{\numberline {2.6}Conclusion}{43}{section.2.6}

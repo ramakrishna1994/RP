@@ -2,7 +2,7 @@ import psycopg2
 from collections import Counter
 
 dbName = "censys"
-table = "INDIA_DEVICES_ALL"
+table = "NL_DEVICES_ALL"
 device = "nas"
 ports = []
 

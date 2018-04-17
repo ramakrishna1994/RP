@@ -275,9 +275,249 @@ BigQuery is Google's serverless, highly scalable, low cost enterprise data wareh
 \paragraph{}
 Google BigQuery engine looks like above. After we got access to their entire database, we started running queries to get the data of India and Netherlands entire database of all open devices and their ports.
 
+\paragraph{}
+India and Netherlands databases are huge in size comprising around 40 to 50 GB. We saved them as tables in Google BigQuery engine. Later we exported them to our local Bits Server machines in PostgreSQL databases for running our queries locally. Below are some of the statistics.
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ \textbf{DEVICE-TYPE} & \textbf{COUNT OF DEVICES}\\
+ \hline
+ nas (Network Access Storage) & 73247  \\
+  \hline
+ soho router & 35951  \\
+  \hline
+ IPMI & 12039  \\
+  \hline
+ infrastructure router & 11315  \\
+  \hline
+ network & 7388  \\
+  \hline
+ cable modem & 3572  \\
+  \hline
+ DSL/cable modem & 3076  \\
+  \hline
+ camera	 & 2007  \\
+  \hline
+ printer & 1437  \\
+  \hline
+ power distribution unit & 1110  \\
+  \hline
+ DSL modem & 698  \\
+ \hline
+ firewall & 644  \\
+ \hline
+ scada controller & 531  \\
+ \hline
+ alarm system & 225  \\
+ \hline
+ kvm & 103  \\
+ \hline
+ switch & 83  \\
+ \hline
+ set-top box & 59  \\
+ \hline
+ scada gateway & 57  \\
+ \hline
+ programmable logic controller	 & 25  \\
+ \hline
+ scada server & 21  \\
+ \hline
+ solar panel & 15  \\
+ \hline
+ hvac & 14  \\
+ \hline
+ DVR & 12  \\
+ \hline
+ laser printer & 8  \\
+ \hline
+ environment monitor & 5  \\
+ \hline
+ scada router & 5  \\
+ \hline
+\end{tabular}
+\caption{List of Devices in Netherlands}
+\end{center}
+\end{table}
+
+\paragraph{}
+There were a total of close to 1.6 million open devices in Netherlands which is a huge number and can be taken advantage of which can cause severe damage. Python code has been written for getting all the devices in India and Netherlands. 
+
+\lstinputlisting[language=python, caption=All open devices in India and Netherlands, captionpos=top]{./files/1_Get_Ports.py}
+
+\paragraph{}
+The total number of ports and their counts is also found out by running the queries using python. It is given below.
+
+\lstinputlisting[language=python, caption=All open ports and their counts, captionpos=top]{./files/2_GetSpecificPortCount.py}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ \textbf{DEVICE-TYPE} & \textbf{COUNT OF DEVICES}\\
+ \hline
+ network & 135522  \\
+  \hline
+ infrastructure router & 43909  \\
+  \hline
+ soho router & 10268  \\
+  \hline
+ camera & 9491  \\
+  \hline
+ DSL/cable modem & 3356  \\
+  \hline
+ nas & 2537  \\
+  \hline
+ IPMI & 1135  \\
+  \hline
+ printer	 & 931  \\
+  \hline
+ firewall & 667  \\
+  \hline
+ DSL modem & 298  \\
+  \hline
+ power distribution unit & 242  \\
+ \hline
+ DVR & 182  \\
+ \hline
+ kvm & 50  \\
+ \hline
+ environment monitor	 & 24  \\
+ \hline
+ solar panel & 13  \\
+ \hline
+ scada server	 & 10  \\
+ \hline
+ switch & 9  \\
+ \hline
+ scada router & 9  \\
+ \hline
+ cable modem	 & 8  \\
+ \hline
+ set-top box & 8  \\
+ \hline
+ wireless modem & 8  \\
+ \hline
+ scada controller & 6  \\
+ \hline
+ scada gateway & 2  \\
+ \hline
+\end{tabular}
+\caption{List of Devices in India}
+\end{center}
+\end{table}
+
+\paragraph{}
+There were close to 2 Million devices in India. Open ports and their counts are given below for both Netherlands and India.
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |c|c|||||c|c| } 
+ \hline
+ \textbf{PORT} & \textbf{COUNT} & \textbf{PORT} & \textbf{COUNT}\\
+ \hline
+ 443 & 2670606  & 80 & 1925425\\
+  \hline
+
+22 & 409455  & 25 & 262318\\
+  \hline
+ 
+ 21 & 218763 & 143 & 192846   \\
+  \hline
+
+ 110 & 177016 & 995	 & 174642 \\
+  \hline
+ 
+ 8080 & 171372 &  993 & 162578 \\
+  \hline
+ 
+ 53 & 134094 & 465 & 108951 \\
+ \hline
+ 
+ 587 & 45178 & 23	 & 28813 \\
+ \hline
+
+ 8888 & 24090  & 445	 & 5637\\
+ \hline
+
+ 7547 & 2545  & 2323 & 2257 \\
+ \hline
+ 
+ 1911 & 931  & 1900 & 647 \\
+ \hline
+ 
+ 502 & 347  & 102 & 107 \\
+ \hline
+ 
+ 47808 & 75  & 20000 & 1 \\
+ \hline
+
+\end{tabular}
+\caption{List of Ports and their counts in Netherlands}
+\end{center}
+\end{table}
 
 
 
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{ |c|c|||||c|c| } 
+ \hline
+ \textbf{PORT} & \textbf{COUNT} & \textbf{PORT} & \textbf{COUNT}\\
+ \hline
+ 443 & 1427660  & 80 & 683484\\
+  \hline
+
+8080 & 263629  & 22 & 184335\\
+  \hline
+ 
+ 53 & 169409 & 8888 & 160570   \\
+  \hline
+
+ 110 & 103431 & 21	 & 98719 \\
+  \hline
+ 
+ 25 & 90601 &  143 & 84316 \\
+  \hline
+ 
+ 23 & 74346 & 995 & 59108 \\
+ \hline
+ 
+ 993 & 49866 & 465	 & 39585 \\
+ \hline
+
+ 445 & 39177  & 587	 & 9668\\
+ \hline
+
+ 7547 & 7810  & 1900 & 2197 \\
+ \hline
+ 
+  2323 & 1048  & 502 & 106 \\
+ \hline
+ 
+  47808 & 11  & 102 & 7 \\
+ \hline
+ 
+  1911 & 2  & 20000 & 1 \\
+ \hline
+
+\end{tabular}
+\caption{List of Ports and their counts in India}
+\end{center}
+\end{table}
+
+\paragraph{}
+There were in total of 35 Million devices in India and 67 Million devices in Netherlands. 2 tables were created in the PostgreSQL database for devices in India and Netherlands and queries were run against those tables. Below is the command for connecting to database "censys".
+
+\begin{center}
+\textit{ sudo -u postgres psql -d censys}
+\end{center}
+
+\paragraph{}
+After they are satisfied with our results, entire database has been handed to them for future work.
 
 \newpage
 \chapter{Analysis and Design of IDS using Honeypots}
@@ -801,7 +1041,7 @@ Based on the results, below table has been deduced.
 
 \lstinputlisting[language=python, caption=K-Means Algorithm using Spark, captionpos=top]{./files/08_Sentiments_K_means.py}
 
-\lstinputlisting[language=python, caption=K-Means Algorithm using Spark, captionpos=top]{./files/09_ClassifyIPs.py}
+\lstinputlisting[language=python, caption=Classifying IPs, captionpos=top]{./files/09_ClassifyIPs.py}
 
 
 
@@ -939,7 +1179,7 @@ Some of the malicious URL's accessed by the attackers is captured by the cowrie.
  
  
 \end{tabular}
-\caption{List of DDos Binaries}
+\caption{List of Malicious URLs}
 \end{center}
 \end{table}
 
@@ -1045,6 +1285,8 @@ Privacy and Security of Cloud-Based Internet of Things (IoT) by \textit{ Tanupri
 \bibitem{REF-18}
 Internet of Things (IoT) security platforms by \textit{ Ibrahim R. Waz and Mohamed Ali Sobh and Ayman M. Bahaa-Eldin}
 
+\bibitem{REF-19}
+A Search Engine Backed by Internet-Wide Scanning by \textit{Zakir Durumeric and David Adrian and Ariana Mirian and  Michael Bailey and J. Alex Halderman}
 
 \end{thebibliography}
 
