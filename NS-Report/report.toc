@@ -1,0 +1,80 @@
+\contentsline {paragraph}{}{1}{section*.1}
+\contentsline {paragraph}{}{1}{section*.2}
+\contentsline {paragraph}{}{1}{section*.3}
+\contentsline {paragraph}{}{1}{section*.4}
+\contentsline {paragraph}{}{1}{section*.5}
+\contentsline {paragraph}{}{1}{section*.6}
+\contentsline {paragraph}{}{2}{section*.7}
+\contentsline {paragraph}{}{3}{section*.8}
+\contentsline {paragraph}{}{3}{section*.9}
+\contentsline {paragraph}{}{3}{section*.10}
+\contentsline {paragraph}{}{3}{section*.11}
+\contentsline {paragraph}{}{3}{section*.12}
+\contentsline {paragraph}{}{3}{section*.13}
+\contentsline {paragraph}{}{3}{section*.14}
+\contentsline {paragraph}{}{3}{section*.15}
+\contentsline {section}{\numberline {1}Introduction of Tools}{1}{section.1}
+\contentsline {paragraph}{}{1}{section*.18}
+\contentsline {subsection}{\numberline {1.1}ELK Stack}{1}{subsection.1.1}
+\contentsline {paragraph}{}{1}{section*.19}
+\contentsline {subsubsection}{\numberline {1.1.1}Elastic Search}{1}{subsubsection.1.1.1}
+\contentsline {paragraph}{}{1}{section*.20}
+\contentsline {subsubsection}{\numberline {1.1.2}Logstash}{1}{subsubsection.1.1.2}
+\contentsline {paragraph}{}{1}{section*.21}
+\contentsline {subsubsection}{\numberline {1.1.3}Kibana}{1}{subsubsection.1.1.3}
+\contentsline {paragraph}{}{1}{section*.22}
+\contentsline {subsection}{\numberline {1.2}Honeypots}{1}{subsection.1.2}
+\contentsline {paragraph}{}{1}{section*.23}
+\contentsline {paragraph}{}{1}{section*.24}
+\contentsline {paragraph}{}{1}{section*.25}
+\contentsline {subsubsection}{\numberline {1.2.1}Low-interaction honeypots}{2}{subsubsection.1.2.1}
+\contentsline {paragraph}{}{2}{section*.26}
+\contentsline {paragraph}{}{2}{section*.27}
+\contentsline {subsubsection}{\numberline {1.2.2}Medium-interaction honeypots}{2}{subsubsection.1.2.2}
+\contentsline {paragraph}{}{2}{section*.28}
+\contentsline {subsubsection}{\numberline {1.2.3}High-interaction honeypots}{2}{subsubsection.1.2.3}
+\contentsline {paragraph}{}{2}{section*.29}
+\contentsline {paragraph}{}{2}{section*.30}
+\contentsline {subsubsection}{\numberline {1.2.4}Cowrie Honeypot}{2}{subsubsection.1.2.4}
+\contentsline {paragraph}{}{2}{section*.31}
+\contentsline {paragraph}{Interesting Features of Cowrie Honeypot}{3}{section*.32}
+\contentsline {subsection}{\numberline {1.3}Github}{3}{subsection.1.3}
+\contentsline {paragraph}{}{3}{section*.33}
+\contentsline {paragraph}{}{3}{section*.34}
+\contentsline {section}{\numberline {2}Installation of Tools}{3}{section.2}
+\contentsline {paragraph}{}{3}{section*.35}
+\contentsline {subsection}{\numberline {2.1}Elastic Search}{3}{subsection.2.1}
+\contentsline {paragraph}{}{3}{section*.36}
+\contentsline {paragraph}{}{4}{section*.37}
+\contentsline {subsection}{\numberline {2.2}Logstash}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Kibana}{4}{subsection.2.3}
+\contentsline {paragraph}{}{5}{section*.38}
+\contentsline {subsection}{\numberline {2.4}Cowrie Honeypot}{5}{subsection.2.4}
+\contentsline {paragraph}{}{5}{section*.39}
+\contentsline {subsubsection}{\numberline {2.4.1}Install dependencies }{5}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Create a user account }{5}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Checkout the code }{5}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Setup Virtual Environment }{6}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Port redirection }{6}{subsubsection.2.4.5}
+\contentsline {paragraph}{}{6}{section*.40}
+\contentsline {subsubsection}{\numberline {2.4.6}Starting Cowrie }{6}{subsubsection.2.4.6}
+\contentsline {paragraph}{}{6}{section*.41}
+\contentsline {section}{\numberline {3}Monitoring System}{6}{section.3}
+\contentsline {paragraph}{}{7}{section*.42}
+\contentsline {paragraph}{}{7}{section*.43}
+\contentsline {paragraph}{}{8}{section*.44}
+\contentsline {paragraph}{}{8}{section*.45}
+\contentsline {paragraph}{}{8}{section*.46}
+\contentsline {paragraph}{}{8}{section*.47}
+\contentsline {paragraph}{}{9}{section*.48}
+\contentsline {paragraph}{}{9}{section*.49}
+\contentsline {paragraph}{}{9}{section*.50}
+\contentsline {paragraph}{}{10}{section*.51}
+\contentsline {paragraph}{}{10}{section*.52}
+\contentsline {paragraph}{}{10}{section*.53}
+\contentsline {paragraph}{}{11}{section*.54}
+\contentsline {paragraph}{}{11}{section*.55}
+\contentsline {subsection}{\numberline {3.1}Stochastic Process}{12}{subsection.3.1}
+\contentsline {paragraph}{}{12}{section*.56}
+\contentsline {section}{\numberline {4}Conclusion}{12}{section.4}
+\contentsline {paragraph}{}{12}{section*.57}

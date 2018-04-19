@@ -1,0 +1,21 @@
+{
+ 'response_code': 1,
+ 'verbose_msg': 'Scan finished, scan information embedded in this object',
+ 'scan_id': '1db0ad7dbcec0676710ea0eaacd35d5e471d3e11944d53bcbd31f0cbd11bce31-1390467782',
+ 'permalink': 'https://www.virustotal.com/url/__urlsha256__/analysis/1390467782/',
+ 'url': 'http://www.virustotal.com/',
+ 'scan_date': '2014-01-23 09:03:02',
+ 'filescan_id': null,
+ 'positives': 0,
+ 'total': 51,
+ 'scans': {
+    'CLEAN MX': {
+      'detected': false, 
+      'result': 'clean site'
+    },
+    'MalwarePatrol': {
+      'detected': false, 
+      'result': 'clean site'
+    }
+  }
+}
