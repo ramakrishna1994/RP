@@ -11,7 +11,9 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{color}
-
+\usepackage{pgf-pie}
+\usepackage{pgfplots}
+\usepackage{filecontents}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -64,9 +66,8 @@
 \textbf{A Project Report } \\[20pt]
 on \\[20pt]
 
-\textbf{\large{\textsl{WORK - 1 : INDO-DUTCH Project }}} \\[20pt]
 
-\textbf{\large{\textsl{WORK - 2 : Building Intrusion Detection System Based on the Analysis of Cowrie Honeypot Logs Using Elastic Search, Logstash ,Kibana ,Machine Learning Algorithms and VirusTotal }}} \\[20pt]
+\textbf{\large{\textsl{Internet Wide Scanning and Building Intrusion Detection System Based on the Analysis of Honeypot logs }}} \\[20pt]
 
 by 
 \end{center}
@@ -82,7 +83,6 @@ M.E Computer Science
 \begin{center}
 Under the supervision of \\
 \textbf{PROFESSOR CHITTARANJAN HOTA} \\
-\textbf{RAJESH KUMAR SHRIVASTAVA }
 \end{center}
 
 \paragraph{}
@@ -114,7 +114,7 @@ SUBMITTED IN FULFILMENT OF THE REQUIREMENTS OF \\
 \begin{center}
 \textbf{\Large{ACKNOWLEDGMENTS}} \\[30pt]
 \end{center}
-I owe my sincere gratitude to Prof. CHITTARANJAN HOTA, a distinguished faculty at BITS Pilani ,Hyderabad Campus and my mentor RAJESH KUMAR SHRIVASTAVA for this project, for their constant
+I owe my sincere gratitude to Prof. CHITTARANJAN HOTA, a distinguished faculty at BITS Pilani ,Hyderabad Campus for this project, for his constant
 guidance, invaluable suggestions and advice at every stage of the project.
 
 
@@ -153,7 +153,7 @@ guidance, invaluable suggestions and advice at every stage of the project.
 \end{center}
 
 \begin{flushleft}
-This is to certify that the project report entitled “Work-1 and Work-2” submitted by Mr SARADHI RAMAKRISHNA (ID No. 2017H1030081H) in partial
+This is to certify that the project report entitled “Internet Wide Scanning and Building Intrusion Detection System Based on the Analysis of Honeypot logs” submitted by Mr SARADHI RAMAKRISHNA (ID No. 2017H1030081H) in partial
 fulfilment of the requirements of the course BITS G540, Research Practice, embodies
 the work done by him under my supervision and guidance.
 \end{flushleft}
@@ -194,15 +194,6 @@ Date : 10-04-2018
 \newpage
  
 \pagenumbering{arabic}
-
-
-
-
-
-
-
-
-
 
 \chapter{INDO-DUTCH Project}
 
@@ -817,15 +808,25 @@ A Kibana Utility graph named Unique Count has been used for counting the Unique 
 \includegraphics[scale=0.5]{Unique_IP}
 \end{figure}
 
-\item Top 20 Passwords Pie
+\item Top 10 Passwords Pie
 \paragraph{}
-A pie chart has been drawn against the top 20 passwords used by the attackers and intruders. It can be observed that passwords "ubnt" and "admin" are mostly used.
+A pie chart has been drawn against the top 10 passwords used by the attackers and intruders. It can be observed that passwords "ubnt" and "admin" are mostly used.
 
-\begin{figure}[H]
+\paragraph{}
+\begin{tikzpicture}
 \centering
-\caption{Top 20 Passwords Pie}
-\includegraphics[scale=0.29]{Passwords_Pie}
-\end{figure}
+ \pie [rotate = 90,sum = auto]
+    {1465/admin,
+     1242/1234,
+     1118/ubnt,
+     883/root, 
+     742/password,
+     547/user,
+     536/123456,
+     497/1111,
+     399/support,
+     355/TestingR2}
+\end{tikzpicture}
 
 \item Global Attacks Map
 \paragraph{}

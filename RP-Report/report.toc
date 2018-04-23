@@ -105,34 +105,35 @@
 \contentsline {paragraph}{}{19}{section*.88}
 \contentsline {paragraph}{}{20}{section*.89}
 \contentsline {paragraph}{}{20}{section*.90}
-\contentsline {paragraph}{}{21}{section*.91}
-\contentsline {subsection}{\numberline {2.4.1}Stochastic Process}{21}{subsection.2.4.1}
+\contentsline {paragraph}{}{20}{section*.91}
 \contentsline {paragraph}{}{21}{section*.92}
+\contentsline {subsection}{\numberline {2.4.1}Stochastic Process}{21}{subsection.2.4.1}
+\contentsline {paragraph}{}{21}{section*.93}
 \contentsline {section}{\numberline {2.5}Intrusion Detection System}{22}{section.2.5}
-\contentsline {paragraph}{}{22}{section*.93}
 \contentsline {paragraph}{}{22}{section*.94}
 \contentsline {paragraph}{}{22}{section*.95}
+\contentsline {paragraph}{}{22}{section*.96}
 \contentsline {subsection}{\numberline {2.5.1}Malicious-URLs Table}{24}{subsection.2.5.1}
-\contentsline {paragraph}{}{24}{section*.96}
-\contentsline {paragraph}{}{27}{section*.97}
+\contentsline {paragraph}{}{24}{section*.97}
 \contentsline {paragraph}{}{27}{section*.98}
+\contentsline {paragraph}{}{27}{section*.99}
 \contentsline {subsection}{\numberline {2.5.2}Stats Table}{28}{subsection.2.5.2}
-\contentsline {paragraph}{}{28}{section*.99}
 \contentsline {paragraph}{}{28}{section*.100}
-\contentsline {paragraph}{}{29}{section*.101}
-\contentsline {paragraph}{}{31}{section*.102}
-\contentsline {paragraph}{}{32}{section*.103}
-\contentsline {subsubsection}{DOS Attacks}{32}{section*.104}
-\contentsline {paragraph}{}{32}{section*.105}
-\contentsline {paragraph}{}{35}{section*.106}
-\contentsline {subsubsection}{Modified Naive Bayes With K-Means for Classification}{35}{section*.107}
-\contentsline {paragraph}{}{35}{section*.108}
-\contentsline {paragraph}{}{36}{section*.109}
-\contentsline {subsubsection}{DDOS Binaries}{40}{section*.110}
-\contentsline {paragraph}{}{40}{section*.111}
+\contentsline {paragraph}{}{28}{section*.101}
+\contentsline {paragraph}{}{29}{section*.102}
+\contentsline {paragraph}{}{31}{section*.103}
+\contentsline {paragraph}{}{32}{section*.104}
+\contentsline {subsubsection}{DOS Attacks}{32}{section*.105}
+\contentsline {paragraph}{}{32}{section*.106}
+\contentsline {paragraph}{}{35}{section*.107}
+\contentsline {subsubsection}{Modified Naive Bayes With K-Means for Classification}{35}{section*.108}
+\contentsline {paragraph}{}{35}{section*.109}
+\contentsline {paragraph}{}{36}{section*.110}
+\contentsline {subsubsection}{DDOS Binaries}{40}{section*.111}
 \contentsline {paragraph}{}{40}{section*.112}
-\contentsline {paragraph}{}{41}{section*.113}
-\contentsline {paragraph}{}{42}{section*.114}
+\contentsline {paragraph}{}{40}{section*.113}
+\contentsline {paragraph}{}{41}{section*.114}
 \contentsline {paragraph}{}{42}{section*.115}
 \contentsline {paragraph}{}{42}{section*.116}
+\contentsline {paragraph}{}{42}{section*.117}
 \contentsline {section}{\numberline {2.6}Conclusion}{43}{section.2.6}
